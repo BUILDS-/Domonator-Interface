@@ -82,26 +82,6 @@ include ('tree.php');?>
 						
 						<div class="basicBox" style="padding: 5px;" align="center">
 
-							<table cellpadding="0" cellspacing="0">
-
-								<tr>
-
-									<td>
-
-				
-										<center>
-
-										<div class="itemContents">
-
-											stuff goes here
-
-										</div></center>
-
-									</td>
-
-								</tr>
-
-							</table>
 
 						</div>
 
@@ -116,13 +96,6 @@ include ('tree.php');?>
 						<table cellpadding="0" cellspacing="0" width="100%">
 
 							<tr>
-
-								<!-- <td class="titleBar">
-								
-								
-									 <div class='title'><span class='titleModifier'> </span></div>
-									<div class='paging'>[ <span class='pagingHighlight'>$num of $total ]</div> 
-								</td>-->
 								<?php
 								echo "
 							</tr>
