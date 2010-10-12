@@ -184,6 +184,206 @@ include ('tree.php');?>
 
 <!-- POPUP CONTAINERS -->
 <form action="#" onsubmit="return false">
+<div id="historyInfoPopup" class="popup">
+	<table cellpadding="0" cellspacing="0" width="100%">
+		<tr>
+			<td>
+				<table cellpadding="0" cellspacing="0" width="100%">
+					<tr>
+						<td>
+							<table cellpadding="0" cellspacing="0">
+								<tr>
+									<td>
+										<table cellpadding="0" cellspacing="0" class="popupTab" id="popupHistoryResultsTab">
+											<tr>
+												<td class="tabLeft"><img src="web/resources/images/spacer.gif" width="8" height="7" alt="" /></td>
+												<td class="tabBody">Results</td>
+												<td class="tabRight"><img src="web/resources/images/spacer.gif" width="8" height="7" alt="" /></td>
+											</tr>
+										</table>
+									</td>
+									<td>
+										<table cellpadding="0" cellspacing="0" class="popupTab" id="popupHistoryResolutionTab" style="display: none">
+											<tr>
+												<td class="tabLeft"><img src="web/resources/images/spacer.gif" width="8" height="7" alt="" /></td>
+												<td class="tabBody">Resolution</td>
+												<td class="tabRight"><img src="web/resources/images/spacer.gif" width="8" height="7" alt="" /></td>
+											</tr>
+										</table>
+									</td>
+									<td>
+										<table cellpadding="0" cellspacing="0" class="popupTab" id="popupHistoryCloseTab">
+											<tr>
+												<td class="tabLeft"><img src="web/resources/images/spacer.gif" width="8" height="7" alt="" /></td>
+												<td class="tabBody">Close Event</td>
+												<td class="tabRight"><img src="web/resources/images/spacer.gif" width="8" height="7" alt="" /></td>
+											</tr>
+										</table>
+									</td>
+									<td>
+										<table cellpadding="0" cellspacing="0" class="popupTab" id="popupHistoryDetailsTab">
+											<tr>
+												<td class="tabLeft"><img src="web/resources/images/spacer.gif" width="8" height="7" alt="" /></td>
+												<td class="tabBody">Details</td>
+												<td class="tabRight"><img src="web/resources/images/spacer.gif" width="8" height="7" alt="" /></td>
+											</tr>
+										</table>
+									</td>
+									<td>
+										<table cellpadding="0" cellspacing="0" class="popupTab" id="popupHistoryAdvancedTab">
+											<tr>
+												<td class="tabLeft"><img src="web/resources/images/spacer.gif" width="8" height="7" alt="" /></td>
+												<td class="tabBody">Advanced</td>
+												<td class="tabRight"><img src="web/resources/images/spacer.gif" width="8" height="7" alt="" /></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td class="tertiaryTopRight"><img src="web/resources/images/spacer.gif" width="1" height="1" alt="" /></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td class="tertiaryBody">
+				<div id="popupHistoryResultsBody" class="popupBody">
+					<div class="itemLabelStandalone">
+						<span id="historyInfoAlertType1">Error: Alert type not loaded</span> Alert <!-- substitute strings in so that "Alert" isn't in plain text --> - <span id="historyInfoRuleName1">Error: Rule Name not loaded</span>
+						<span class="itemLabelModifier">
+							(v <span id="historyInfoRuleVersion1">Error: Version not loaded</span> 
+							<span id="historyInfoRuleApproved1">Error: Rule Approved state not loaded</span>)
+						</span>
+					</div>
+					
+					<div class="itemLabel">Server</div>
+					<div class="itemContents" id="historyInfoServerName1">Error: Server name not loaded</div>
+					
+					<div class="itemLabel">Time</div>
+					<div class="itemContents" id="historyInfoEventTime1">Error: Event time not loaded</div>
+					
+					<div class="itemLabel">Status</div>
+					<div class="itemContents" id="historyInfoStatus">Error: Status not loaded</div>
+					
+					<div class="itemLabel">Advice</div>
+					<div class="itemContents" id="historyInfoAdvice1">Error: Rule advice not loaded</div>
+					
+					<div class="itemLabel">Recommended Action</div>
+					<div class="itemContents" id="historyInfoCommand1">Error: Rule recommended action not loaded</div>
+					
+					<div class="itemLabel">Notifications</div>
+					<div class="itemContents" id="historyInfoNotifications">Error: Notifications not loaded</div>
+					
+					<div align="right"><input type="button" name="hide" id="historyInfoHide1" value="hide" /></div>
+				</div>
+				<div id="popupHistoryResolutionBody" class="popupBody">
+					<div class="itemLabelStandalone">
+						<span id="historyInfoAlertType2">Error: Alert type not loaded</span> Alert <!-- substitute strings in so that "Alert" isn't in plain text --> - <span id="historyInfoRuleName2">Error: Rule Name not loaded</span>
+						<span class="itemLabelModifier">
+							(v <span id="historyInfoRuleVersion2">Error: Version not loaded</span> 
+							<span id="historyInfoRuleApproved2">Error: Rule Approved state not loaded</span>)
+						</span>
+					</div>
+					
+					<div class="itemLabelStandalone">Closed by <!-- substitute strings in so that "Closed by" isn't in plain text --><span id="historyInfoClosedBy">Error: Closed by not loaded</span> at <!-- substitute strings in so that "at" isn't in plain text --> <span id="historyInfoClosedAt">Error: Closed time not loaded</span></div>
+					
+					<div class="itemLabel">Resolution Notes</div>
+					<div class="itemContents" id="historyInfoResolutionNotes">Error: Resolution notes not loaded</div>
+					
+					<div align="right"><input type="button" name="hide" id="historyInfoHide2" value="hide" /></div>
+				</div>
+				<div id="popupHistoryCloseBody" class="popupBody">
+					<div class="itemLabelStandalone">Close <span id="ruleToClose">Error: no event found for closure</span> on <span id="serverToClose">Error: no server found for closure</span></div>
+
+					<div class="itemLabel">Timestamp</div>
+					<div class="itemContents" id="historyInfoTimestamp">Error: Timestamp no loaded</div>
+					
+					<div class="itemLabel">Resolution Notes</div>
+					<div class="itemContents"><textarea name="notes" rows="5" cols="50"></textarea></div>
+
+					<div align="right">
+						<input id="historyInfoClose" name="submit" type="button" value="close" />
+						<input id="historyInfoHide3" name="hide" type="button" value="hide" />
+					</div>
+				</div>
+				<div id="popupHistoryDetailsBody" class="popupBody">
+					<div class="itemLabelStandalone">
+						<span id="historyInfoAlertType3">Error: Alert type not loaded</span> Alert <!-- substitute strings in so that "Alert" isn't in plain text --> - <span id="historyInfoRuleName3">Error: Rule Name not loaded</span>
+						<span class="itemLabelModifier">
+							(v <span id="historyInfoRuleVersion3">Error: Version not loaded</span> 
+							<span id="historyInfoRuleApproved3">Error: Rule Approved state not loaded</span>)
+						</span>
+					</div>
+					
+					<div class="itemLabel">Server</div>
+					<div class="itemContents" id="historyInfoServerName2">Error: Server name not loaded</div>
+					
+					<div class="itemLabel">Time</div>
+					<div class="itemContents" id="historyInfoEventTime2">Error: Event time not loaded</div>
+					
+					<div class="itemLabel">Advisor</div>
+					<div class="itemContents" id="historyInfoParentAdvisor">Error: Advisor not loaded</div>
+					
+					<div class="itemLabel">Problem Description</div>
+					<div class="itemContents" id="historyInfoMoreInfo">Error: Rule problem description not loaded</div>
+					
+					<div class="itemLabel">Advice</div>
+					<div class="itemContents" id="historyInfoAdvice2">Error: Rule Advice not loaded</div>
+
+					<div class="itemLabel">Recommended Action</div>
+					<div class="itemContents" id="historyInfoCommand2">Error: Rule Recommended Action not loaded</div>
+					
+					<div class="itemLabel">Links and Further Reading</div>
+					<div class="itemContents" id="historyInfoFurtherInfo">Error: Rule links and further reading not loaded</div>
+					
+					<div align="right"><input type="button" name="hide" id="historyInfoHide4" value="hide" /></div>
+				</div>
+				<div id="popupHistoryAdvancedBody" class="popupBody">
+					<div class="itemLabelStandalone">
+						<span id="historyInfoAlertType4">Error: Alert type not loaded</span> Alert <!-- substitute strings in so that "Alert" isn't in plain text --> - <span id="historyInfoRuleName4">Error: Rule Name not loaded</span>
+						<span class="itemLabelModifier">
+							(v <span id="historyInfoRuleVersion4">Error: Version not loaded</span> 
+							<span id="historyInfoRuleApproved4">Error: Rule Approved state not loaded</span>)
+						</span>
+					</div>
+					
+					<div class="itemLabel">Thresholds</div>
+					<div class="itemContents">
+						Critical Alert = <span id="historyInfoCriticalThreshold">Error: Rule critical threshold not loaded</span><br />
+						Warning Alert = <span id="historyInfoWarningThreshold">Error: Rule warning threshold not loaded</span><br />
+						Info Alert = <span id="historyInfoInfoThreshold">Error: Rule info threshold not loaded</span>
+					</div>
+					
+					<div class="itemLabel">Frequency</div>
+					<div class="itemContents" id="historyInfoFrequency">Error: Rule frequency not loaded</div>
+					
+					<div class="itemLabel">Expression</div>
+					<div class="itemContents" id="historyInfoExpression">Error: Rule expression not loaded</div>
+					
+					<div class="itemLabel">Evaluated Expression</div>
+					<div class="itemContents" id="historyInfoEvaluatedExpression">Error: Evaluated expression not loaded</div>
+					
+					<div align="right"><input type="button" name="hide" id="historyInfoHide5" value="hide" /></div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table cellpadding="0" cellspacing="0" width="100%">
+					<tr>
+						<td class="tertiaryBL"><img src="web/resources/images/tertiaryOnBL.gif" width="8" height="7" alt="" /></td>
+						<td class="tertiaryBC"><img src="web/resources/images/spacer.gif" width="1" height="1" alt="" /></td>
+						<td class="tertiaryBR"><img src="web/resources/images/tertiaryOnBR.gif" width="8" height="7" alt="" /></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</div>
+</form>
+
+<form action="#" onsubmit="return false">
 <div id="fullGraphPopup" class="popup">
 	<table cellpadding="0" cellspacing="0" width="100%">
 		<tr>
