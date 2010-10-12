@@ -35,7 +35,7 @@
 											{
 												//echo "Logged in as <strong> $_COOKIE['username'] </strong>";
 											echo 'Logged in as "<strong>';
-											echo $_COOKIE["username"];
+											echo $username;
 											echo'</strong>" ';
 											}
 											echo'(';

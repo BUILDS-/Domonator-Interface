@@ -5,6 +5,8 @@ $head = "";
 $title = "Domonator";
 $name = "Domonator";
 include ('header_refresh.php');
+
+$username = "jnfurst";
 ?>
 									<table cellpadding="0" cellspacing="0" width="100%" id="tabBar">
 										<tr>
