@@ -161,58 +161,7 @@ include ('tree.php');?>
 					<tr>
 						<td>
 						<br/><br/>
-							<div class="titleBar"><span class="titleModifier"><?php echo $name?>: Meta Info</span></div>
-							<div class="basicBox">
-								<table celppadding="0" cellspacing="0" width="100%">
-									<tr>
-										<td width="50%" valign="top">
-											<table cellpadding="0" cellspacing="0">
-												<tr>
-													<td class="metaLabel">Hostname</td>
-													<td class="metaContent"><?php echo DB_HOST ?></td>
-												</tr>
-												<tr>
-													<td class="metaLabel">MySQL</td>
-													<td class="metaContent"><?php echo $mysql_version ?></td>
-												</tr>
-												
-												<tr>
-													<td class="metaLabel">Rules</td>
-													<td class="metaContent">??</td>
-												</tr>
-												<tr>
-													<td class="metaLabel">Last MySQL Contact</td>
-													<td class="metaContent">???</td>
-												</tr>
-												<tr>
-													<td class="metaLabel">SWGANH Dashboard Version</td>
-													<td class="metaContent"><?php echo $db_version ?></td>
-												</tr>
-											</table>
-										</td>
-										<td width="50%" valign="top">
-											<table cellpadding="0" cellspacing="0">
-												<tr>
-													<td class="metaLabel">OS</td>
-													<td class="metaContent">???</td>
-												</tr>
-												<tr>
-													<td class="metaLabel">CPU</td>
-													<td class="metaContent">???</td>
-												</tr>
-												<tr>
-													<td class="metaLabel">IP Address</td>
-													<td class="metaContent">
-														
-															<?php echo $login_add ?> <br>
-														
-													</td>
-												</tr>
-											</table>
-										</td>
-									</tr>
-								</table>
-							</div>
+							
 						</td>
 					</tr>
 				
