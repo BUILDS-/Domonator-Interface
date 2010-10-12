@@ -95,8 +95,8 @@ include ('tree.php');?>
 											";
 												foreach($subs as $key => $value)
 												{
-													$command = "/var/www/major/weblogin/getdescription.pl $value";
-													exec($command  . " 2>&1", $desc);
+													$command2 = "/var/www/major/weblogin/getdescription.pl $value";
+													exec($command2  . " 2>&1", $desc);
 													
 													echo "
 													<tr class='listRowAlt'>
