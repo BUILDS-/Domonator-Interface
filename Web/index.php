@@ -47,7 +47,7 @@ $username = "Jnfurst";
 							<?php
 include ('tree.php');?>
 
-<table cellpadding="0" cellspacing="0" width="100%">
+<table cellpadding="0" cellspacing="0" width="50%">
 
 
 
@@ -55,7 +55,7 @@ include ('tree.php');?>
 
 		<td valign="top" style="border-right: 1px solid #AAAAAA;">
 
-			<table cellpadding="0" cellspacing="0" width="100%">
+			<table cellpadding="0" cellspacing="0" width="50%">
 
 				<tr>
 
