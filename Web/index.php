@@ -81,7 +81,7 @@ include ('tree.php');?>
 									<table cellpadding='0' cellspacing='0' width='100%'>
 										<tbody>
 											<tr class='titleRow'>
-												<td>Server</td>
+												<td>Name</td>
 												<td>Type</td>
 												<td>Account</td>
 												<td>Date & Time</td>
@@ -94,8 +94,8 @@ include ('tree.php');?>
 	
 	
 		echo "<tr class='listRowAlt'>
-													<td>$name</td>
-													<td>$row[2]</td>
+													<td>builds-list</td>
+													<td>Public</td>
 													<td style='white-space: normal;'>$row[1]</td>
 													<td title='6 minutes ago'>$row[3]</td>
 													
