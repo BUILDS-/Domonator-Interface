@@ -6,7 +6,7 @@ $title = "Domonator";
 $name = "Domonator";
 include ('header_refresh.php');
 
-$username = "Jnfurst";
+$username = "broglek@bu.edu";
 ?>
 									<table cellpadding="0" cellspacing="0" width="100%" id="tabBar">
 										<tr>
@@ -79,7 +79,7 @@ include ('tree.php');?>
 						<table cellpadding="0" cellspacing="0" width="100%">
 
 						<?php
-						$command = "/var/www/major/weblogin/getsubs.pl broglek@bu.edu";
+						$command = "/var/www/major/weblogin/getsubs.pl $username";
 							exec($command  . " 2>&1", $subs);
 								echo "
 							<tr>
@@ -128,7 +128,7 @@ include ('tree.php');?>
 						<div  style="padding: 12px 5px 3px 5px;">
 						<table cellpadding="0" cellspacing="0" align="center">
 							<?php
-							$command = "/var/www/major/weblogin/getadmin.pl broglek@bu.edu";
+							$command = "/var/www/major/weblogin/getadmin.pl $username";
 							exec($command  . " 2>&1", $manage);
 							
 							echo "
