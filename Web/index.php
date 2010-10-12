@@ -3,6 +3,7 @@ include ('custom_functions.php');
 include ('config.php');
 $head = "";
 $title = "Domonator";
+$name = "Domonator";
 include ('header_refresh.php');
 ?>
 									<table cellpadding="0" cellspacing="0" width="100%" id="tabBar">
