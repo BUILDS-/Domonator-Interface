@@ -89,19 +89,17 @@ include ('tree.php');?>
 											<tr class='titleRow'>
 												<td>Name</td>
 												<td>Type</td>
-												<td>Account</td>
-												<td>Date & Time</td>
+												<td>Description</td>
 											</tr>
 											
 											";
 												foreach($subs as $key => $value)
 												{
-													echo "<tr class='listRowAlt'>
-													<td>$value</td>
-													<td>Public</td>
-													<td style='white-space: normal;'>$row[1]</td>
-													<td title='6 minutes ago'>$row[3]</td>
-													
+													echo "
+													<tr class='listRowAlt'>
+														<td>$value</td>
+														<td>Public</td>
+														<td></td>
 													</tr>";
 												
 												}?>
@@ -138,21 +136,20 @@ include ('tree.php');?>
 											<tr class='titleRow'>
 												<td>Name</td>
 												<td>Type</td>
-												<td>Account</td>
-												<td>Date & Time</td>
+												<td>Description</td>
 											</tr>
 											
 											";
 											foreach($manage as $key => $value)
 												{
-													echo "<tr class='listRowAlt'>
-													<td>$value</td>
-													<td>Public</td>
-													<td style='white-space: normal;'>$row[1]</td>
-													<td title='6 minutes ago'>$row[3]</td>
-													
-												</tr>";
-												}?>
+													echo "
+													<tr class='listRowAlt'>
+														<td>$value</td>
+														<td>Public</td>
+														<td></td>
+													</tr>";
+												}
+												?>
 	
 												
 											
