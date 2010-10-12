@@ -78,8 +78,8 @@ include ('tree.php');?>
 
 					<td>
 
-						<div class="titleBar"><span class="titleModifier">SWGANH - Test Center: Graphs</span></div>
-
+						<div class="titleBar"><span class="titleModifier">Lists you are subscribed to:</span></div>
+						<div class='paging'>[ <span class='pagingHighlight'>$num of $total ]</div>
 						<div class="basicBox" style="padding: 5px;" align="center">
 
 							<table cellpadding="0" cellspacing="0">
@@ -120,8 +120,8 @@ include ('tree.php');?>
 								<td class="titleBar">
 								<?php
 								echo "
-									<div class='title'><span class='titleModifier'>Lists you are subscribed to: </span></div>
-									<div class='paging'>[ <span class='pagingHighlight'>$num of $total ]</div>
+									<!-- <div class='title'><span class='titleModifier'> </span></div>
+									<div class='paging'>[ <span class='pagingHighlight'>$num of $total ]</div> -->
 								</td>
 							</tr>
 							<tr>
