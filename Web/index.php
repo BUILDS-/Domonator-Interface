@@ -94,7 +94,7 @@ include ('tree.php');?>
 											</tr>
 											
 											";
-												foreach($mange as $key => $value)
+												foreach($subs as $key => $value)
 												{
 													echo "<tr class='listRowAlt'>
 													<td>$value</td>
@@ -143,7 +143,7 @@ include ('tree.php');?>
 											</tr>
 											
 											";
-											foreach($mange as $key => $value)
+											foreach($manage as $key => $value)
 												{
 													echo "<tr class='listRowAlt'>
 													<td>$value</td>
