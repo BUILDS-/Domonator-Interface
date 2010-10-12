@@ -4,8 +4,8 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" type="text/css" href="web/resources/css/default.css?B=1.2.0.6769" />
 		<link rel="stylesheet" type="text/css" href="web/resources/css/tree.css?B=1.2.0.6769" />
-		<link rel="shortcut icon" href="web/swganh.ico" />
-		<script type="text/javascript" language="javascript">
+		<!-- <link rel="shortcut icon" href="web/swganh.ico" /> -->
+		 <script type="text/javascript" language="javascript"> 
 		/* <![CDATA[ */
 			//for use in javascript files that reference images
 			var GLOBAL_baseImagePath = 'web/resources/images/';
@@ -51,7 +51,7 @@
 							</table>
 							<table cellpadding="0" cellspacing="0" width="100%">
 								<tr>
-									<td id="logo"><img src="images/logo.gif"  class="decoration"/></td>
+									<td id="logo"><img src="images/test13.png"  class="decoration"/></td>
 									<td id="logo">
 									<font size="7" color="#FFFFFF">Domonator</font></td></tr>
 								</table>
