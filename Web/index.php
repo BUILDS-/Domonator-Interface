@@ -158,13 +158,22 @@ include ('tree.php');?>
 													$command2 = "/var/www/major/weblogin/getdescription.pl $value";
 													exec($command2  . " 2>&1", $desc);
 													
+													$command3 = "/var/www/major/weblogin/getmodpolicy.pl $value";
+													exec($command3  . " 2>&1", $mod);
+													
+													$command3 = "/var/www/major/weblogin/getsubpolicy.pl $value";
+													exec($command3  . " 2>&1", $sp);
+													
 													echo "
 													<tr class='listRowAlt'>
 														<td>$value</td>
-														<td></td>
+														<td>$sp[0]</td>
+														<td>$mod[0]</td>
 														<td>$desc[0]</td>
 													</tr>";
 												unset($desc);
+												unset($sp);
+												unset($mod);
 												}
 												?>
 	
