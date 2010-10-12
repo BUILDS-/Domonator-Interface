@@ -27,7 +27,7 @@
 								<td>
 									<table cellpadding="0" cellspacing="0" width="100%">
 										<tr>
-											<td id="copyright"> Copyright &copy; <?php echo date('Y'); ?> John-Nicholas Furst - <a href="http://www.john-nicholas.net/" target="_blank">BUILDS</a>. All rights reserved.</td>
+											<td id="copyright"> Copyright &copy; <?php echo date('Y'); ?> <a href="http://john-nicholas.net">John-Nicholas Furst</a> and <a href="mailto:kbrogle@bu.edu">Kyle Brogle</a> - <a href="http://builds.cc" target="_blank">BUILDS</a>. All rights reserved.</td>
 											
 											<td id="footerInfo">
 											<?php
