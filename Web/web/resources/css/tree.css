@@ -1,0 +1,34 @@
+/* NODE COLLECTION FORMATTING AND DISPLAY */
+	/* node collection formatting - do not apply to top level - add display:none if to start collapsed, may require js behavior change as well */
+	.treeWidgetNodeList .treeWidgetNodeList { margin-left: 20px; padding-top: 3px; display: none; }
+	/* font styling within tree */
+	.treeWidgetNodeList div { font-family: arial, sans-serif; font-size: 11px;  }
+
+/* NODE DISPLAY */
+	/* individual node, apply vertical bar in front of node */
+	.treeWidgetNode { padding-bottom: 2px; background: url('../images/treenode_grid_v.gif'); background-position: top left; background-repeat: repeat-y; white-space: nowrap; }
+
+	/* NODE LABEL DISPLAY */
+		/* node's label - selectable part of node */
+		.nodeLabel, .nodeLabelSelected { cursor: pointer; }
+		/* hover state of node label to indicate selectable */
+		.nodeLabel:hover { text-decoration: underline; }
+		/* selected node styling */
+		.nodeLabelSelected { background-color: #003366; color: #FFFFFF; }
+		/* node label modifiers - exist inside node label - downAgent and downServer found in default.css since shared with other pages */
+			/* altered view to modifiers when in selected state */
+			.nodeLabelSelected .downAgent { color: #FFFFCC ; background: #660000; }
+			.nodeLabelSelected .downServer { color: #FFFFFF ; background: #660000; }
+			.nodeLabelSelected .blackout { color: #CCCCCC ; background: #000000; }
+		
+	/* NODE EXPAND/COLLAPSE DISPLAY */
+		/* expand collapse element, may be empty if no children */
+		.nodeSelector img, .nodeSelectorExpanded img, .nodeSelectorCollapsed img { width: 19px; height: 11px; display: inline; }
+		.nodeSelectorExpanded, .nodeSelectorCollapsed { background-repeat: no-repeat; cursor: pointer; display: inline; }
+		.nodeSelector { background: url('../images/treenode_grid_t.gif'); background-position: top left; background-repeat: no-repeat; }
+		.nodeSelectorExpanded { height: 18px; background-image: url('../images/treenode_expand_minus.gif'); background-position: top left; background-repeat: no-repeat; }
+		.nodeSelectorCollapsed { height: 18px; background-image: url('../images/treenode_expand_plus.gif'); background-position: top left; background-repeat: no-repeat; }
+	
+	/* NODE MODIFIERS */
+		/* container at end of node - used for node flags and warnings - not selectable */
+		.nodeModifier { padding-left: .6em; }

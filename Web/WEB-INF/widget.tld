@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN" "http://java.sun.com/dtd/web-jsptaglibrary_1_2.dtd">
+<taglib>
+	<tlib-version>1.0.0</tlib-version>
+	<jsp-version>1.2</jsp-version>
+	<short-name>w</short-name>
+	<uri>/widget-tags</uri>
+	<display-name>"Merlin Widget Tags"</display-name>
+	<description><![CDATA["Custom tags for use with the Merlin project for display purposes."]]></description>
+	<tag>
+		<name>paging</name>
+		<tag-class>com.mysql.merlin.ui.taglib.Paging</tag-class>
+		<body-content>JSP</body-content>
+		<description><![CDATA[Show paging element for a record set.]]></description>
+		<attribute>
+			<name>numRecords</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<description><![CDATA[Number of records found in record set.]]></description>
+		</attribute>
+		<attribute>
+			<name>currentPage</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<description><![CDATA[Current page that user is on within paging context.]]></description>
+		</attribute>
+		<attribute>
+			<name>limit</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<description><![CDATA[Number of records displayed per page.]]></description>
+		</attribute>
+		<attribute>
+			<name>action</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<description><![CDATA[Action to perform updating record set when moving to another page.]]></description>
+		</attribute>
+		<attribute>
+			<name>maxPages</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<description><![CDATA[Override to the default max number of page links to display at a time.]]></description>
+		</attribute>
+	</tag>
+	<tag>
+		<name>sortColumn</name>
+		<tag-class>com.mysql.merlin.ui.taglib.SortColumn</tag-class>
+		<body-content>JSP</body-content>
+		<description><![CDATA[Show sort element for given sortable column.]]></description>
+		<attribute>
+			<name>action</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<description><![CDATA[Action to perform updating record set when moving to another page.]]></description>
+		</attribute>
+		<attribute>
+			<name>column</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<description><![CDATA[Column key to sort on.]]></description>
+		</attribute>
+		<attribute>
+			<name>primarySort</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<description><![CDATA[Current column being sorted on.]]></description>
+		</attribute>
+		<attribute>
+			<name>primarySortDesc</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<description><![CDATA[Whether the currently sorted column is descending.]]></description>
+		</attribute>
+	</tag>
+</taglib>

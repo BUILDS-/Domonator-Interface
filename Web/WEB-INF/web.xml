@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" version="2.4">
+	
+	<display-name>Enterprise Dashboard</display-name>
+	<filter>
+		<filter-name>struts2</filter-name>
+		<filter-class>org.apache.struts2.dispatcher.FilterDispatcher</filter-class>
+		<init-param>
+			<param-name>actionPackages</param-name>
+			<param-value>com.mysql.merlin.ui.actions</param-value>
+		</init-param>
+	</filter>
+
+	<filter>
+		<filter-name>contextCleanup</filter-name>
+		<filter-class>org.apache.struts2.dispatcher.ActionContextCleanUp</filter-class>
+	</filter>
+	
+	<filter>
+		<filter-name>ResourceHeaderFilter</filter-name>
+		<filter-class>com.mysql.merlin.ui.actions.ResponseHeaderFilter</filter-class>
+		<init-param>
+			<param-name>Cache-Control</param-name>
+			<param-value>max-age=300, must-revalidate</param-value>
+		</init-param>
+		<init-param>
+			<param-name>Accept-Ranges</param-name>
+			<param-value>bytes</param-value>
+		</init-param>
+		<init-param>
+			<param-name>Expires</param-name>
+			<param-value>60</param-value>
+		</init-param>
+	</filter>
+	
+	<filter>
+		<filter-name>GraphHeaderFilter</filter-name>
+		<filter-class>com.mysql.merlin.ui.actions.ResponseHeaderFilter</filter-class>
+		<init-param>
+			<param-name>Cache-Control</param-name>
+			<param-value>no-cache</param-value>
+		</init-param>
+		<init-param>
+			<param-name>Accept-Ranges</param-name>
+			<param-value>bytes</param-value>
+		</init-param>
+		<init-param>
+			<param-name>Pragma</param-name>
+			<param-value>no-cache</param-value>
+		</init-param>
+		<init-param>
+			<param-name>Expires</param-name>
+			<param-value>-100</param-value>
+		</init-param>
+		<init-param>
+			<param-name>Last-Modified</param-name>
+			<param-value>100</param-value>
+		</init-param>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>struts2</filter-name>
+		<url-pattern>*.action</url-pattern>
+	</filter-mapping>
+	
+	<filter-mapping>
+		<filter-name>ResourceHeaderFilter</filter-name>
+		<url-pattern>/web/resources/*</url-pattern>
+	</filter-mapping>
+	
+	<filter-mapping>
+		<filter-name>GraphHeaderFilter</filter-name>
+		<url-pattern>/web/graphs/*</url-pattern>
+	</filter-mapping>
+
+	<listener>
+		<listener-class>org.apache.struts2.tiles.StrutsTilesListener</listener-class>
+	</listener>
+	
+	<servlet>
+		<servlet-name>defaultServlet</servlet-name>
+		<servlet-class>org.apache.catalina.servlets.DefaultServlet</servlet-class>
+		<init-param>
+			<param-name>debug</param-name>
+			<param-value>0</param-value>
+		</init-param>
+		<init-param>
+			<param-name>listings</param-name>
+			<param-value>false</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<!-- This is the default servlet that is responsible for schema modifications, starting worker threads etc. -->
+	<servlet>
+		<servlet-name>main</servlet-name>
+		<servlet-class>com.mysql.merlin.server.MainServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<!-- This is the heartbeat servlet that is responsible for all agent communications. -->
+	<servlet>
+		<servlet-name>heartbeat</servlet-name>
+		<servlet-class>com.mysql.merlin.server.agent.HeartbeatServlet</servlet-class>
+	</servlet>
+
+	<!-- This is the public servlet that is responsible for all REST based public API communications. -->
+	<servlet>
+		<servlet-name>rest</servlet-name>
+		<servlet-class>com.mysql.merlin.server.PublicAPIServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>defaultServlet</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>main</servlet-name>
+		<url-pattern>/main</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>heartbeat</servlet-name>
+		<url-pattern>/heartbeat</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>rest</servlet-name>
+		<url-pattern>/rest</url-pattern>
+	</servlet-mapping>
+	
+	<session-config>
+		<session-timeout>1440</session-timeout>
+    </session-config>
+	
+	<!-- direct user to empty Auth.action file that triggers forward to real action -->
+	<welcome-file-list>
+		<welcome-file>/Auth.action</welcome-file>
+	</welcome-file-list>
+
+	<jsp-config>
+		<taglib>
+			<taglib-uri>/widget-tags</taglib-uri>
+			<taglib-location>/WEB-INF/widget.tld</taglib-location>
+		</taglib>
+	</jsp-config>
+
+	<!--Define environment entries for this Application-->
+	<env-entry>
+		<env-entry-name>org.apache.commons.logging.Log</env-entry-name>
+		<env-entry-type>java.lang.String</env-entry-type>
+		<env-entry-value>org.apache.commons.logging.impl.SimpleLog</env-entry-value>
+	</env-entry>
+
+	<env-entry>
+		<env-entry-name>org.apache.commons.logging.simplelog.showdatetime</env-entry-name>
+		<env-entry-type>java.lang.Boolean</env-entry-type>
+		<env-entry-value>true</env-entry-value>
+	</env-entry>
+</web-app>

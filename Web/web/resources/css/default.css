@@ -1,0 +1,304 @@
+/* META CLASSES - DEFINES BASIC PAGE BEHAVIOR */
+	html, body { background: #B9BFCA; } 
+	body { padding: 0px 10px 10px 10px; margin: 0px; }
+	body, td, p, input, option, select, textarea, pre { font-family:  helvetica, arial, sans-serif; font-size: 11px; }
+	input, textarea, select { border-width: 1px; border-color: #AAAAAA; font-weight: normal; }
+	input, select { margin: 0px; }
+	/* fix for Firefox where the disabled button has more vertical spacing unless padding is specified */
+	input[type=button], input[type=submit] { padding: 1px 6px 1px 6px; }
+	input[type=image] { border-style: none !important; }
+	/* remove default borders and change to inline display for better interaction with text - should still set border property to zero in images as best practice */
+	img { border-style: none; display: block; margin: 0px; }
+	/* remove default form margins */
+	form, pre, noscript { margin: 0px; }
+	/* set default link colors */
+	a:link, a:active, a:visited { color: #1144BB; text-decoration: none; }
+	a:hover { text-decoration: underline; }
+	/* set more legible relative spacing in paragraphs */
+	p { line-height: 1.3em }
+	/* show table cells if empty - should still not have empty cells anywhere */
+	table { empty-cells: show; }
+	html.working * { cursor: wait !important; }
+	
+/* PAGE SECTIONS and SECTION COMPONENTS */
+
+	/* HEAD SECTION */
+	
+		/* TICKER */
+			#ticker { background: #ABB4C0; border: 1px solid #9DA7B5; border-top-style: none; border-bottom-style: none; padding: 3px 5px 3px 5px; }
+			#ticker a:active, #ticker a:link, #ticker a:visited, #ticker a:hover { color: #FFFFFF; text-decoration: none; }
+			#ticker td { color: #FFFFFF; }
+			#tickerConfig { text-align: right; }
+			
+		/* HEADER */
+			#header { background: #556B82; }
+			#logo { padding: 0px 0px 0px 25px; }
+			#productName { padding: 0px 0px 0px 0px; }
+			#headerLinks { vertical-align: bottom; text-align: right; padding: 0px 15px 3px 0px; color: #FFFFFF; }
+				#headerLinks a:active, #headerLinks a:link, #headerLinks a:visited, #headerLinks a:hover { color: #FFFFFF; text-decoration: none; }
+				#headerLinks a:hover { text-decoration: underline; }
+				#headerLinks img { vertical-align: bottom; text-decoration: none; display: inline; }
+			#doRefresh { font-size: 10px; }
+			
+	/* NOTICE BAR - notices and errors, not always present */
+		#noticeBar, #cookiesEnabledBar, #javascriptEnabledBar { background: #F2F4F7; margin-top: 10px; }
+		.noticeBody { padding: 0px 10px 0px 10px; background: #F2F4F7; border: 1px solid #556B82; border-top-style: none; border-bottom-style: none; }
+		.notice { color: #000000; }
+		.error { color: #990000; }
+		
+	/* BODY SECTION */
+		#bodyWrapper { margin-top: 10px; }
+		#bodyContentsWrapper { vertical-align: top; background: #FFFFFF; border: 1px solid #637C96; border-bottom-style: none; border-top-style: none; background: #F2F4F7;}
+		.secondaryFooterBG td, .secondaryFooterSpacer { background: #FFFFFF url('../images/secondaryBGBottom.gif'); }
+		.secondaryHeaderBG td, .secondaryHeaderSpacer { background: #FFFFFF url('../images/secondaryBGTop.gif'); }
+		.secondaryBody { background: #F2F4F7; border: 1px solid #556B82; border-top-style: none; border-bottom-style: none; }
+		.secondaryHeaderSpacer, .secondaryFooterSpacer { width: 100%; }		
+		/* TABS */
+			
+			/* INACTIVE NAV TAB */
+				.tab .tabLeft { background: #DDCAB5 url('../images/tabBGLeft.gif'); }
+					.tab .tabLeft img { background: url('../images/tabTL.gif'); }
+					/* progid:DXImageTransform.Microsoft.AlphaImageLoader(src='image.png', sizingMethod='scale') */
+				.tab .tabBody { background: #DDCAB5 url('../images/tabBGTop.gif'); }
+				.tab .tabRight { background: #DDCAB5 url('../images/tabBGRight.gif'); }
+					.tab .tabRight img { background: url('../images/tabTR.gif'); }
+				.tab a:active, .tab a:link, .tab a:visited, .tab a:hover { color: #533F00; text-decoration: none; }
+			
+			/* ACTIVE NAV TAB */
+				.tabOn .tabLeft { background: #637C96 url('../images/tabOnBGLeft.gif'); }
+					.tabOn .tabLeft img { background: url('../images/tabOnTL.gif'); }
+				.tabOn .tabBody { background: #637C96 url('../images/tabOnBGTop.gif'); }
+				.tabOn .tabRight { background: #637C96 url('../images/tabOnBGRight.gif'); }
+					.tabOn .tabRight img { background: url('../images/tabOnTR.gif'); }
+				.tabOn a:active, .tabOn a:link, .tabOn a:visited, .tabOn a:hover { color: #FFFFFF; text-decoration: none; }
+			
+			/* TREE TAB */
+				.treeTab .tabLeft { background: #F2F4F7 url('../images/secondaryBGLeft.gif'); }
+					.treeTab .tabLeft img { background: url('../images/secondaryTL.gif'); }
+				.treeTab .tabBody { background: #F2F4F7 url('../images/secondaryBGTop.gif'); }
+				.treeTab .tabRight { background: #F2F4F7 url('../images/secondaryBGRight.gif'); }
+					.treeTab .tabRight img { background: url('../images/secondaryTR.gif'); }
+				.treeTabSpacer { border-bottom: 1px solid #556B82; width: 100%; }
+					
+			/* popup tabs must use filtering for IE transparency like filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/tertiaryTR.png', sizingMethod='scale'), sort out details */
+			/* POPUPS */
+				.popupTab .tabBody{ padding: 1px 2px 0px 2px !important; }
+				.popupTabOn .tabBody { padding: 1px 2px 1px 2px !important; }
+				.popupTab, .popupTabOn { cursor: pointer; }
+			
+				/* INACTIVE POPUP TAB */
+					.popupTab .tabLeft { background: url('../images/tertiaryTL.gif') !important; background-position: top left !important; background-repeat: no-repeat !important; border-bottom: 1px solid #637C96; }
+					.popupTab .tabBody { background: #E1E3E8 url('../images/tertiaryBGTop.gif'); border-bottom: 1px solid #637C96; }
+					.popupTab .tabRight { background: url('../images/tertiaryTR.gif') !important; background-position: top right !important; background-repeat: no-repeat !important; border-bottom: 1px solid #637C96; }
+					.popupTab a:active, .tab a:link, .tab a:visited, .tab a:hover { color: #533F00; text-decoration: none; }
+				
+				/* ACTIVE POPUP TAB */
+					.popupTabOn .tabLeft  { background: url('../images/tertiaryOnTL.gif') !important; background-position: top left !important; background-repeat: no-repeat !important; }
+					.popupTabOn .tabBody { background: #FFFFFF url('../images/tertiaryOnBGTop.gif'); }
+					.popupTabOn .tabRight  { background: url('../images/tertiaryOnTR.gif') !important; background-position: top right !important; background-repeat: no-repeat !important; }
+					.popupTabOn a:active, .tabOn a:link, .tabOn a:visited, .tabOn a:hover { text-decoration: none; }
+					
+			
+			/* SHARED TAB TRAIGHTS */
+				.tabLeft { background-repeat: repeat-y !important; background-position: top left !important; vertical-align: top !important; }
+					.tabLeft img { background-repeat: no-repeat !important; width: 8px !important; height: 7px !important; vertical-align: top; }
+				.tabBody { background-repeat: repeat-x !important; background-position: top !important; padding: 3px 7px 2px 7px !important; white-space: nowrap !important; font-size: 11px !important; }
+				.tabBody img { display: inline !important; vertical-align: baseline !important; }
+				.tabRight { background-repeat: repeat-y !important; background-position: right !important; vertical-align: top !important; }
+					.tabRight img { background-repeat: no-repeat !important; width: 8px !important; height: 7px !important; vertical-align: top; }
+			
+			/* SPECIAL TAB MODIFIERS */
+				#settingsTab { width: 100%; }
+			
+		/* SECONDARY NAV */
+			#secondaryNav { background: #637C96; color: #FFFFFF; padding: 3px 5px 4px 5px; }
+			#secondaryNav a:active, #secondaryNav a:link, #secondaryNav a:visited { color: #EEEEEE; text-decoration: underline; }
+			#secondaryNav a:hover { text-decoration: none; }
+			#secondaryNav a.current:active, #secondaryNav a.current:link, #secondaryNav a.current:visited, #secondaryNav a.current:hover { color: #FFFFFF; text-decoration: none; }
+			
+		/* TREE - see tab section above for tree tab classes */
+			#treeBody { padding: 5px 5px 5px 3px; }
+			#treeTopLeft { border-left: 1px solid #556B82; background: #F2F4F7; }
+			#treeTopRight { background: #F2F4F7 url('../images/secondaryBGTop.gif'); width: 100%; text-align: right; background-repeat: repeat-x; }
+			#treeTopRight img { margin: 0 0 0 auto; }
+			.treeToBodySpacer { width: 10px; }
+				.treeToBodySpacer img { width: 10px; height: 1px; }
+			
+		/* BUTTON BARS */
+			.topButtonBar { background: #F2F4F7; padding: 5px; border-right-style: none; border-left-style: none; }
+			.bottomButtonBar { background: #F2F4F7; padding: 5px 5px 0px 5px; border-right-style: none; border-left-style: none; }
+			
+		/* BUTTONS */
+			.submitButtonOver { border-color: #CCCCCC; background: #DDDDDD; color: #660000; }
+			/* fix for disabled buttons becoming larger than normal buttons - Firefox */
+			/* .submitButtonOver, .submitButtonOver:disabled, .submitButton, .submitButton:disabled { margin: 0px 0px 0px 0px; padding: 0px 5px 0px 5px; } */
+			
+		/* TITLE */
+			.titleBar { float: none; clear:both;  border: 1px solid #BFB173; background: #DBD3B0; padding: 2px 5px 2px 5px; border-right-style: none; border-left-style: none; color: #533F00; }
+				.title { float: left; color: #533F00; }
+				.titleModifier { font-weight: bold; }
+				.paging { float: right; color: #533F00; }
+				
+		/* FILTERS */
+			.filter { background: #F2F4F7; padding: 2px 10px 0px 10px; border-bottom: 1px solid #B9B9B9; border-right-style: none; border-left-style: none; } /* filter bottom should match .titleRow TD border top color */
+			.inputLabelWrap { float: left; padding: 0px 5px 4px 0px; }
+			.inputLabelTitle { font-weight: normal; }
+			
+		/* LISTBOX */
+			.listBox, .listBoxCollapsible { border-top-style: none; border-bottom-style: none; }
+				.listBox a img, .listBoxCollapsible a img { vertical-align: bottom; }
+				.listBoxCollapsible .listRow, .listBoxCollapsible .listRowAlt, .listBoxCollapsible .listRowCategoryL2 { display: none; }
+			.titleRow td { background: #E8DCCE; padding: 2px 5px 2px 5px; border-right: 1px solid #D7C1A8; border-left: 1px solid #F7F2EE; border-bottom: 1px solid #B9B9B9; white-space: nowrap; }
+				.titleRow .linkColumn { width: 100% }
+				.titleRow img { display: inline; vertical-align: baseline; }
+			.listRow td, .listRowAlt td, .listRowSelected td, .listRowCategoryL1 td, .listRowCategoryL2 td { padding: 2px 5px 2px 5px; border-right: 1px solid #CCCCCC; border-bottom: 1px solid #CCCCCC; border-left: 1px solid #FEFDF5; white-space: nowrap; }
+			.listRow td { background: #FCF9E2; }
+				.listRow .sorted { background: #ECE9D3; }
+			.listRowAlt td { background: #F8ECE7; }
+				.listRowAlt .sorted { background: #E8DCD8; }
+			.listRowSelected td { background: #F5EEB7; }
+			.listRowCategoryL1 td, .listRowCategoryL2 td { background: #EEEEEE; }
+			.listBoxBottom { background: #E6E6E6; border-bottom: 1px solid #C4C4C4; border-right-style: none; border-left-style: none; text-align: right; padding: 3px 5px 3px 5px; }
+			.firstCellL1 { }
+			.firstCellL2 { padding-left: 23px !important; }
+			.firstCellL3 { padding-left: 41px !important; }
+			.listLink { margin-right: 15px; }
+				.listLink img { display: inline; }
+			.expandTransformer { vertical-align: top; margin: 1px 3px 1px 1px; cursor: pointer; display: inline; }
+			.noRecordsFound { font-weight: bold; font-size: 12px; padding: 8px !important; white-space: nowrap; text-align: center; }
+			
+			/* CELL MODIFIERS */
+				.centered { text-align: center; } /* not particularly useful over align attrib but allows to centralize with other cell formatting */
+					.centered img { display: inline; }
+				.problem { color: #990000; font-style: italic; }
+				.numeric { text-align: right; }
+				.unknown, .unknown span { font-style: italic; color: #666666 !important; }
+					
+			/* TERTIARY BOXES - popups, etc. */
+				.tertiaryBody { background: #FFFFFF; border: 1px solid #637C96; border-top-style: none; border-bottom-style: none; padding: 5px 10px 5px 10px; width: 100%; }
+				.tertiaryTopRight { border-bottom: 1px solid #637C96; width: 100%; }
+				.tertiaryBL { background: url('../images/tertiaryOnBL.gif'); background-repeat: no-repeat; background-position: bottom left; }
+				.tertiaryBC { border-bottom: 1px solid #637C96; width: 100%; background: #FFFFFF; }
+				.tertiaryBR { background: url('../images/tertiaryOnBR.gif'); background-repeat: no-repeat; background-position: bottom left; }
+					.tertiaryBL img, .tertiaryBR img { width: 8px; height: 7px; }
+					
+			/* PAGING COMPONENT */
+				.pagingHighlight { font-weight: bold; }
+				.pagingLinks { padding-left: 20px; }
+				.pagingLeftLink { padding-right: 10px; }
+				.pagingRightLink { padding-left: 10px; }
+				.pagingLink { padding-left: 3px; padding-right: 3px; }
+					span.pagingLink { font-weight: bold; }
+			
+		/* BASIC CONTAINER */
+			/* issue with basic box interaction with bottom cap in IE */
+			.basicBox { margin: 0px; padding: 10px; }
+			div.itemLabelStandalone { font-weight: bold; margin: 0px 0px 10px 0px; line-height: 1.4em; }
+			div.itemLabel { font-weight: bold; line-height: 1.4em; }
+			.itemLabelModifier { font-weight: normal; }
+			div.itemContents { margin: 0px 0px 10px 0px; line-height: 1.4em; }
+			/* alternate left-right display in table format */
+			td.itemLabel { font-weight: bold; line-height: 1.4em; text-align: right; padding: 0px 5px 3px 0px; vertical-align: top; white-space: nowrap; }
+			td.itemContents { line-height: 1.4em; padding: 0px 0px 3px 5px; vertical-align: top; }
+			
+		/* POPUPS */
+			.popup { width: 400px; display: none; position: absolute; left: 100px; top: 100px; z-index: 100; }
+			.loadingDialog { padding: 15px; border: 1px solid #000000; background: #FFFFFF; position: absolute; left: 100px; top: 100px; z-index: 100; display: none; }
+			.popupBodyOn { display: block; }
+			.popupBody { display: none; }
+			.popupFormSubtitle, .popupFormLabel { text-align: right; vertical-align: top; padding: 0px 10px 10px 5px; }
+			.popupFormSubtitle { font-weight: bold; }
+			.popupFormContents { padding: 0px 5px 10px 0px; vertical-align: top; }
+			.popupFormButtonWrap { text-align: right; }
+			.popupBlock { width: 100%; height: 100%; display: none; position: absolute; left: 0px; top: 0px; background: #000000; z-index: 50; }
+		
+	/* FOOTER */
+		#footer { background: #556B82; margin-top: 10px; }
+		#footer td { color: #FFFFFF; }
+		#footer a:active, #footer a:link, #footer a:visited, #footer a:hover { color: #FFFFFF; }
+		#copyright { vertical-align: bottom; padding: 0px 0px 0px 10px; white-space: nowrap; font-size: 9px; color: #CCCCCC !important; }
+		#footerInfo { width: 100%; padding-right: 10px; text-align: right; white-space: nowrap; }
+		#footerCopy { padding: 0px 10px 0px 10px; white-space: nowrap; }
+		#footerLinks { vertical-align: bottom; padding: 0px 10px 0px 15px; white-space: nowrap; }
+		#expired { color: #FFCC33; }
+		#license { width: 100%; padding-right: 10px; text-align: right; white-space: nowrap; }
+		
+/* MISC UTILITY CLASSES */
+	.right { text-align: right; }
+	.right img { margin: 0 0 0 auto; }
+	.checkbox { padding: 0px; margin: 0px; height: 15px; width: 15px; }
+	.enabled { color: #1144BB; cursor: pointer; }
+	.disabled { color: red; cursor: pointer; }
+	img.decoration { display: block !important; } /* makes it so that there is no line-height applied to image and image is not set at baseline */
+	.defaultAction, .formPadder { visibility: hidden; position: absolute; top: 0px; left: 0px; } /* used when you want to specify the default action of a form by hiding a submit button just after form open */
+	.downAgent, .downAgent a:active, .downAgent a:link, .downAgent a:visited, .downAgent a:hover { color: #990000; font-weight: bold; }
+	.downServer, .downServer a:active, .downServer a:link, .downServer a:visited, .downServer a:hover { text-decoration: line-through; }
+	.blackout, .blackout a:active, .blackout a:link, .blackout a:visited, .blackout a:hover { color: #888888; font-weight: bold; }
+	.bad { color: #990000; }
+	.good { color: #009900; }
+
+/* SPECIAL COMPONENTS */
+
+	/* CALENDAR PICKER */
+		.calendarTable { empty-cells: show; border-collapse: separate; }
+		.calendarTable td { font-family: monospace; }
+		.calendarDaysOfWeek td { font-size: 14px; font-weight: bold; text-align: center; border-top: 1px solid #666666; border-bottom: 1px solid #666666;  background: #D7DFE3;}
+		.calendarRow td { font-size: 11px; text-align: right; width: 14px; height: 14px; border: 1px solid #F3F3F3; padding: 2px; }
+		td.calendarDayOn { background: #FFFF66; border: 1px solid #444444; cursor: pointer; }
+		td.calendarDayCurrent { background: #EEEEEE; border: 1px solid #999999; cursor: pointer; }
+		td.calendarDayOver { background: #FFFFAA; border: 1px solid #999999; cursor: pointer; }
+		.calendarWrapper { border: 1px solid #555555; background: #F3F3F3; border-collapse: separate; position: absolute; display: none; z-index: 1000; }
+		.calendarLast, .calendarNext { font-size: 14px; font-weight: bold; padding: 0px 5px 0px 5px; cursor: pointer; }
+		.calendarTitle { text-align: center; font-size: 12px; font-family: arial; font-weight: bold; padding-top: 2px; }
+		.lastDayOfWeek { border-right: 1px solid #666666; }
+		.firstDayOfWeek { border-left: 1px solid #666666; }
+		.calendarPadder { padding: 2px 5px 3px 5px; } 
+	
+	/* I FRAME FIX FOR IE RENDER ISSUE ON ABSOLUTE POSITIONED ELEMENTS OVER SELECT BOXES - IE always shows dropdowns through all elements except for iframes */
+		.frameFix, .frameFix2 { width: 100%; height: 100%; display: none; position: absolute; left: 0px; top: 0px; background: #000000; z-index: 40; opacity: 0; }
+		.frameFix2 { z-index: 200; } /* must be higher than the popup z-index */
+		
+	/* GRAPH TAB DISPLAY */
+		.graphTitle td { padding: 3px 5px 3px 5px; font-weight: bold; }
+		.graphContainer td { }
+		
+	/* HEAT CHART - used on monitor page */
+		.listRowHeatCategoryL1 td, .listRowHeat td, .listRowHeatAlt td { padding: 2px 5px 2px 5px; border-right: 1px solid #999999; border-bottom: 1px solid #999999; white-space: nowrap; }
+		.listRowHeatCategoryL1 td {  background: #EEEEEE; }
+		.listRowHeat td { background: #FCF9E2; }
+		.listRowHeatAlt td { background: #F8ECE7; }
+		.heatIndicatorOSInfo, .heatIndicatorDBPerformance, .heatIndicatorUpDown, .heatIndicatorAlerts { width: 19px; text-align: center;  padding-right: 0px !important; padding-left: 0px !important; overflow: hidden; }
+			.listRowHeatCategoryL1 .heatIndicatorOSInfo { background: #EBDECF !important; }
+			.listRowHeatCategoryL1 .heatIndicatorDBPerformance { background: #D2E1F0 !important; }
+			.listRowHeatCategoryL1 .heatIndicatorUpDown { background: #D1E9D5 !important; }
+			.listRowHeatCategoryL1 .heatIndicatorAlerts { background: #FFFFD4 !important; }
+			.listRowHeat .heatIndicatorOSInfo { background: #F5EFE7 !important; }
+			.listRowHeat .heatIndicatorDBPerformance { background: #E9F0F8 !important; }
+			.listRowHeat .heatIndicatorUpDown { background: #E8F4EA !important; }
+			.listRowHeat .heatIndicatorAlerts { background: #FFFFEA !important; }
+		.heatEvents { padding-right: 0px !important; padding-left: 0px !important; overflow: hidden; text-align: center; }
+		.heatChartHeader td {border-bottom: 1px solid #999999; }
+		.heatIndicator a { text-decoration: underline; }
+		.listBoxCollapsible .listRowHeat, .listBoxCollapsible .listRowHeatAlt { display: none; }
+		.listBoxCollapsible .listRowHeat .firstCell, .listBoxCollapsible .listRowHeatAlt .firstCell { padding-left: 30px; }
+		.firstCellHeatL1, .firstCellHeatL2 { border-left: 1px solid #999999; text-align: left; }
+		.firstCellHeatL2 { padding-left: 20px !important; }
+		div.graph { padding: 5px; border: 1px solid #666666; background: #FFFFFF; }
+		.graphSurround { border: 1px solid #999999; cursor: pointer; }
+		#heatChart img { display: inline; vertical-align: baseline; }
+		#heatChartLegend img { display: inline; }
+		.overflow { color: #990000; }
+		
+	/* META INFO - used on monitor page */
+		.metaLabel { vertical-align: top; padding: 2px 10px 2px 10px; text-align: right; white-space:nowrap; font-weight: bold; }
+		.metaContent { vertical-align: top; padding: 2px 10px 2px 0px; }
+		
+	/* NOTICE BOX - fading box for notices and messages */
+		#fader { display: none; top: 5px; position: absolute; z-index: 300; }
+		#fader #noticeMessages li { white-space: nowrap; }
+
+		
+/* IMPLEMENTATION NOTES */
+/*
+	* note anywhere that you need to change images if you change the color
+*/

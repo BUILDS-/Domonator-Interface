@@ -1,0 +1,710 @@
+Signature-Version: 1.0
+Created-By: 1.5.0_06 (Sun Microsystems Inc.)
+SHA1-Digest-Manifest-Main-Attributes: nxykWR9OGgwtRglKO4e646LoL6g=
+SHA1-Digest-Manifest: jd+hWF58zxjjaJgg15KmFtVObk0=
+
+Name: WEB-INF/lib/commons-collections-3.2.jar
+SHA1-Digest: l2fxE9wTOGnAfUt5zvEzDYWwVa8=
+
+Name: web/resources/images/spinner.gif
+SHA1-Digest: uhHD5SGerxY9Fo1nvo7iH/Zbzjg=
+
+Name: web/resources/images/treenode_expand_plus.gif
+SHA1-Digest: wS+ZtT9Af9KVM4k6dmoTwnw1fb4=
+
+Name: WEB-INF/lib/struts2-tiles-plugin-2.0.6.jar
+SHA1-Digest: 5WrBy1BL88hG77Hb3M8Z1d+rDhI=
+
+Name: WEB-INF/lib/freemarker-2.3.8.jar
+SHA1-Digest: fIgMPZqYReuBZ1HHzIYaaygY8Aw=
+
+Name: WEB-INF/lib/aspectjweaver.jar
+SHA1-Digest: 4JbprPUebIkUiiNIHQhV0mcA0AE=
+
+Name: web/resources/images/tertiaryOnBGLeft.gif
+SHA1-Digest: uQh3iCEy2wQvXg5WQIBqvyKt33I=
+
+Name: web/resources/images/alarmIcon11.png
+SHA1-Digest: yXSfmmC5IL38yYQDWtdg/5T2rkw=
+
+Name: web/resources/images/treenode_grid_t.gif
+SHA1-Digest: rCvaqtZeiyMKuE/q7by0MUGrLq0=
+
+Name: WEB-INF/pages/settings/notification/notification.jsp
+SHA1-Digest: 5i25jvI5p+YzCGs425Ec+HNY6r4=
+
+Name: web/resources/images/heatChartHeaderLeft.png
+SHA1-Digest: KBX+UM+TyNIh7KX+cMg3u3fq8rQ=
+
+Name: web/resources/images/tertiaryBGRight.gif
+SHA1-Digest: 4PQ4px6DX69/ZWWliilJ/8CIPD8=
+
+Name: web/resources/images/secondaryBGLeft.gif
+SHA1-Digest: hUM8z0JT4dU/G3ENb2ub3hhx1yM=
+
+Name: WEB-INF/lib/commons-validator-1.3.0.jar
+SHA1-Digest: 5ncgF+rDxU8FbDoP7SgyPG72GhI=
+
+Name: web/resources/images/chartIcon11.png
+SHA1-Digest: pIi0O6PIB74EHyga3IT8oq7ShYM=
+
+Name: WEB-INF/lib/struts2-core-2.0.6.jar
+SHA1-Digest: mkmLe7AqGWv2CXob3PgIsR/WTxM=
+
+Name: WEB-INF/lib/AdvisorScript-Basic-1.2.0.6508.jar
+SHA1-Digest: zdStjRYSZ77IvdjOrYD6BtsbGD4=
+
+Name: web/resources/images/secondaryBGBottom.gif
+SHA1-Digest: /UjS+iaBWVVCjGn5WUaTEHxnW4Q=
+
+Name: WEB-INF/lib/jung-1.7.6.jar
+SHA1-Digest: cuWp2G9qpPagBZwtqmCFnQAujhU=
+
+Name: WEB-INF/lib/commons-logging-1.0.4.jar
+SHA1-Digest: VT4R1GsS2s+Wlg1q+QMMcTPEkjg=
+
+Name: web/resources/images/treenode_grid_v.gif
+SHA1-Digest: Jop/g43pf0sTCo/1aOIoi+3A1d4=
+
+Name: WEB-INF/lib/jfreechart-1.0.4.jar
+SHA1-Digest: o4lj/GaAUHFm98VSYQx7sI6Rq0A=
+
+Name: web/resources/images/confgIcon11.png
+SHA1-Digest: dxIvTM25WPOIn0kUtWpSlS/EyrU=
+
+Name: WEB-INF/lib/log4j-1.2.13.jar
+SHA1-Digest: j3H3nYZUtJDtX5idKHAVm8VcSCc=
+
+Name: web/resources/images/infoDot.png
+SHA1-Digest: hT6ZeF7zndLjDOo6q5sYUlfwtPQ=
+
+Name: web/resources/images/counterOverflowWarning.png
+SHA1-Digest: SHHCmNsq2/eVrVyPnRnNLWmRocQ=
+
+Name: WEB-INF/pages/error.jsp
+SHA1-Digest: e/V8RueI3zWHLfMsleIQUSITDc8=
+
+Name: WEB-INF/pages/about.jsp
+SHA1-Digest: Ty7MFngCF3z5W6lsmFGoy0vNpjU=
+
+Name: WEB-INF/lib/mysql-connector-java-commercial-5.0.7-bin.jar
+SHA1-Digest: MotSp/Taz/wvWYCJkx63c0EGLGM=
+
+Name: WEB-INF/lib/mail.jar
+SHA1-Digest: MxJ+NpcU8Qa7u6GKwRPCC2wQ1R0=
+
+Name: web/resources/js/popup.js
+SHA1-Digest: fwSDUYQbHczN03JwlDrEFFsJmf4=
+
+Name: web/resources/images/cal.gif
+SHA1-Digest: IRy2FwgvilJr0ZmJJZghGXdCAB8=
+
+Name: web/resources/images/heatChartHeader.png
+SHA1-Digest: qDXaSdNHBEXJtvrknIv8XSUZT2s=
+
+Name: web/resources/images/primaryBR.gif
+SHA1-Digest: RoLf26jEJlUBX1FG93tpU0E+EE8=
+
+Name: WEB-INF/lib/commons-chain-1.1.jar
+SHA1-Digest: KCNP7eYtNO4z82IszEFEjS6xeVw=
+
+Name: web/resources/images/help/en/logs-screen.png
+SHA1-Digest: GywWtIRrEYTgC9r9BdjHn+oruUc=
+
+Name: web/resources/images/item_icon_19.png
+SHA1-Digest: oen2eUsfpL82CETN14KD3ZR1yeA=
+
+Name: WEB-INF/pages/notFound.jsp
+SHA1-Digest: swJtY/4jO0XCkNslkNn/wImnNBg=
+
+Name: WEB-INF/lib/ognl-2.6.11.jar
+SHA1-Digest: 73pp9BG9TLlqVyYwO1nWSztXEm0=
+
+Name: web/resources/images/status_info_16x16.png
+SHA1-Digest: VkKmIJ9Ehk2IEvkqijVdw+ZDl8o=
+
+Name: WEB-INF/pages/monitor/home/index.jsp
+SHA1-Digest: JDjfN/u6Su8R6Yw6clWH2hHMZcg=
+
+Name: web/resources/images/warningDot.png
+SHA1-Digest: PmFUcCg0kRK8gg7A+XD9MpwkAnQ=
+
+Name: web/resources/images/help/en/architecture-and-components.png
+SHA1-Digest: /aOXAx4l2HfQ7vvgW7r6y3XjMao=
+
+Name: web/resources/images/tabTR.gif
+SHA1-Digest: h1Wpj24z92X4/+KAVQtVvWYdDcI=
+
+Name: web/resources/css/help.css
+SHA1-Digest: wkaO6HmUhgt/zxjBJVQkZUp2Azg=
+
+Name: WEB-INF/lib/commons-pool.jar
+SHA1-Digest: /Uk65KvrR9NBudeQawfCxSopwQs=
+
+Name: web/resources/images/heatChartHolder.png
+SHA1-Digest: Sw9xnsQ6Z0bycHM/mJXTpCDS7Wg=
+
+Name: web/resources/images/securityIcon16.png
+SHA1-Digest: ykvUc/u1Bl5qhVaBRVPYPkziE0o=
+
+Name: web/resources/images/scriptIcon16.png
+SHA1-Digest: BqcU47v545QGKnrzq8hrmRKx32w=
+
+Name: web/resources/images/tabOnTL.gif
+SHA1-Digest: +riJ5R5aeWI8H+7LNR8sRRsvrSU=
+
+Name: WEB-INF/pages/monitor/dashboard/dashboard.jsp
+SHA1-Digest: gCyDjuTbphGFpTmRuZhf1dCxFU8=
+
+Name: web/resources/images/chartIcon16.png
+SHA1-Digest: Ou4gzpL8EA9bkNIQGWHt7AXitkE=
+
+Name: web/resources/images/headerTR.gif
+SHA1-Digest: GKszA/dW02Z+IL9mSWc+TXWhddw=
+
+Name: WEB-INF/pages/monitor/advisors/checkForUpdates.jsp
+SHA1-Digest: kfYK3RVlf6iuWLUxQZY3GQk2WAI=
+
+Name: web/resources/images/tabOnBGRight.gif
+SHA1-Digest: m4Qp3LMqG+L0BdoA8/FZvKzw93Y=
+
+Name: WEB-INF/pages/settings/users/manageUsers.jsp
+SHA1-Digest: g611dFtZBbvd4bprTfmft8MVYxI=
+
+Name: web/resources/images/deleteIcon11.png
+SHA1-Digest: 6tPh+nlPeuuymsutWFh9KNd8lk8=
+
+Name: web/resources/images/warning.png
+SHA1-Digest: aiUDCyWsYeizj2rFl5vo5wWBzqE=
+
+Name: web/resources/images/tabBGLeft.gif
+SHA1-Digest: QE0nHTY3dMteiEkbBg5vkuJf/Vc=
+
+Name: web/resources/images/alarmIcon16.png
+SHA1-Digest: 25ZxAt3ovDWcTxJ2FhcxAff5RP4=
+
+Name: web/resources/images/unknownIcon11.png
+SHA1-Digest: tYuPn5JxU7toXRMdFft0J8b+8t0=
+
+Name: WEB-INF/lib/struts2-config-browser-plugin-2.0.6.jar
+SHA1-Digest: 1nPi12aC/LO1LKKnknB3XUgG7rw=
+
+Name: WEB-INF/pages/help/en.jsp
+SHA1-Digest: FUDDw6JjBdfgDsleVzlyVYX5Ixc=
+
+Name: WEB-INF/pages/settings/logs/showLog.jsp
+SHA1-Digest: /xizhOWF8zNa/Cl/SJVJN1D3oGs=
+
+Name: web/resources/images/tabTL.gif
+SHA1-Digest: hptjRwvAl5j0T9vNPWfaB9A1MSU=
+
+Name: web/resources/images/sortUp.gif
+SHA1-Digest: EJ9CuazPfTO3IFNnDm6PQJvX3yc=
+
+Name: web/resources/images/help/en/usage-advisor-configuration.png
+SHA1-Digest: v421OXbiXMZekSUtDcZI0TVkzZo=
+
+Name: WEB-INF/pages/monitor/replication/replicationMonitoring.jsp
+SHA1-Digest: Dji6YB65WTZ+U9BoU0VrC/RBLR4=
+
+Name: web/resources/images/noteIcon11.png
+SHA1-Digest: LBQIb3F0E5mUuzmUkqAkCyzsaPc=
+
+Name: web/resources/images/tabOnBGTop.gif
+SHA1-Digest: sAcT7Kya2ATFqRKf7/yo4vks2CA=
+
+Name: web/resources/images/runIcon11.png
+SHA1-Digest: 5nSYuqfU3FZfu04L8/hTdDeNlXY=
+
+Name: web/resources/images/status_info_24x24.png
+SHA1-Digest: 38S9anTmgYXLrt0p28vDbdF3PgA=
+
+Name: web/resources/images/help/en/heat-chart.png
+SHA1-Digest: S6rSCm6e4VF6sXNOKotDoXzJ5vY=
+
+Name: web/resources/images/mysql_network_130x94-64.gif
+SHA1-Digest: Zb2PIXSuC+O9ILgE9yIh9vIpw/s=
+
+Name: web/resources/images/tertiaryBGLeft.gif
+SHA1-Digest: GicPD+jW4yJroP4C8JnRXuoXt4c=
+
+Name: web/resources/images/secondaryBR.gif
+SHA1-Digest: N2bwPdCL8ontR27pXuMICy93AHk=
+
+Name: WEB-INF/lib/tiles-api-2.0.1.jar
+SHA1-Digest: 6XlIf/qLrkFh4wCWcWJcUPSU5vo=
+
+Name: web/resources/images/heatChartHeaderRight.png
+SHA1-Digest: veOFfji2ZnmkYaqiJiVgT9ha7qI=
+
+Name: WEB-INF/lib/libsigar-x86-linux.so
+SHA1-Digest: 4B93l3rmSLakTmiDWEiJwS3XRRA=
+
+Name: web/resources/images/tabOnBGLeft.gif
+SHA1-Digest: QCVvQEjZfNX86moMZKMLslQBqgM=
+
+Name: WEB-INF/lib/jsonrpc-1.0.jar
+SHA1-Digest: 2B6QEA0y62g66PrKf4XWjOlrkSc=
+
+Name: web/resources/images/logOutIcon.png
+SHA1-Digest: hKaL4F9bzWSIsTeFyR+i6PB6wCc=
+
+Name: WEB-INF/web.xml
+SHA1-Digest: YT3J1krycDpgAmOscQjzjK9kt3s=
+
+Name: web/favicon.ico
+SHA1-Digest: v6Gl4oT+bti8oJ96DhGEJ/JQ1EI=
+
+Name: web/resources/images/tertiaryOnBGBottom.gif
+SHA1-Digest: 5JttUyVhdIsx6y/vYKZtcMFqdiU=
+
+Name: WEB-INF/lib/cglib-2.1.3.jar
+SHA1-Digest: qmraTD6eWUv4PmyfWLJGSBHS/S8=
+
+Name: web/resources/images/status_warning_24x24.png
+SHA1-Digest: tDIxZuLUQlPhi8ya2ceiQ7j7168=
+
+Name: web/resources/images/folder_icon_19.png
+SHA1-Digest: q5aGEciAMMm6/P+UidQUznPhyXc=
+
+Name: web/resources/images/secondaryBGTop.gif
+SHA1-Digest: G6KgPjLn0clDR6Vm5Nw3EqEj+GY=
+
+Name: web/resources/images/addIcon11.png
+SHA1-Digest: Mocj/sdf3Xjb5UZbctjOVrt7N+c=
+
+Name: web/resources/images/tertiaryBGTop.gif
+SHA1-Digest: SdOx1MUczDnLRWkkilnVFUcJ9FM=
+
+Name: WEB-INF/pages/settings/logs/logs.jsp
+SHA1-Digest: kiElC8AgynO5Exm4Q8Cemhy9n3A=
+
+Name: web/resources/images/primaryBL.gif
+SHA1-Digest: 00ClHJJ1Lpw7vslTFXeoqTDqfGQ=
+
+Name: WEB-INF/tiles/layouts/default.jsp
+SHA1-Digest: TVQqAb4pApAKr7twVv3HiQLyYY0=
+
+Name: web/resources/images/downDot.png
+SHA1-Digest: xpH9XEcw/17baup/7+INdU3q5uU=
+
+Name: web/resources/images/help/en/first-dashboard-login.png
+SHA1-Digest: 41mAIaFW05j2kQJuORfQUNNtPjw=
+
+Name: web/resources/images/deleteIcon16.png
+SHA1-Digest: ItMxZiH3NhYnChRQl5GxLzJ+wWw=
+
+Name: WEB-INF/lib/SNMP4J.jar
+SHA1-Digest: CyV5gHPBV+mXytV9twoY9rGneJc=
+
+Name: web/resources/images/closeIcon11.png
+SHA1-Digest: Za0tLHvQ1qGh6kSgA+7bji4cxso=
+
+Name: web/resources/css/default.css
+SHA1-Digest: XdKI16JZlJPZojtooP7KfTTqGxw=
+
+Name: web/resources/images/help/en/heat-chart-legend.png
+SHA1-Digest: dYqy/SvQiph42awSyeA0H5xBCxk=
+
+Name: web/resources/images/secondaryBL.gif
+SHA1-Digest: XFvRPpF+0fnmnLijVpbPG8LlsVU=
+
+Name: WEB-INF/lib/sigar.jar
+SHA1-Digest: zxr4Y5c4HLfM18UOEd8kbMOdAgA=
+
+Name: web/resources/images/help/en/first-dashboard-login-1.2.png
+SHA1-Digest: VD0qvDhKwb5lcrULaEGoJMP/Qoc=
+
+Name: WEB-INF/lib/tiles-core-2.0.1.jar
+SHA1-Digest: rpVaFdgKobjc3pVhPI+n2i6+7As=
+
+Name: web/resources/images/tertiaryOnBL.gif
+SHA1-Digest: AQ0KJeANus5SKiw3Myp6uI8kVQo=
+
+Name: web/resources/images/tertiaryOnTR.gif
+SHA1-Digest: JK5zkEUWXV3cRyPAhK43UuhGJBk=
+
+Name: web/resources/js/default.js
+SHA1-Digest: VAS5ILdULNWw+Ge1phO+Q4GlOz0=
+
+Name: WEB-INF/tiles/layouts/heatChart.jsp
+SHA1-Digest: q7vp5hAQR/hQ9b9z8zmslpE6XLw=
+
+Name: WEB-INF/lib/xwork-2.0.1.jar
+SHA1-Digest: ClggWXHcRwIwmV3RbqC1tKmpgps=
+
+Name: web/resources/images/server_icon_19.png
+SHA1-Digest: z/tNXraJS5gH36WiFCntWbXDS2o=
+
+Name: web/resources/images/tertiaryOnBGRight.gif
+SHA1-Digest: U8rXka54d3P46X4+vdj4nkH6y+U=
+
+Name: WEB-INF/lib/jcommon-1.0.8.jar
+SHA1-Digest: nUGQlRH3nrsav9C6ufyqqvrPodY=
+
+Name: web/resources/images/headerTL.gif
+SHA1-Digest: 1JLESI2VNVzWBggcW2QaZ/TuEIs=
+
+Name: web/resources/images/status_ok_24x24.png
+SHA1-Digest: HTsdNTGyAqZIvQuLKrovmCINRfg=
+
+Name: web/resources/images/deleteIcon11.gif
+SHA1-Digest: YQIj8/Qk3sICWW4CYmeTdrhplZM=
+
+Name: web/resources/images/help/en/agent-started.png
+SHA1-Digest: P9SrdgJogSDcFph5vQUtEiAfcws=
+
+Name: web/resources/images/homeIcon11.png
+SHA1-Digest: VDzlJjlFaj1EeBNlQzaIb+9AWDA=
+
+Name: web/resources/images/placeholderGraph.gif
+SHA1-Digest: pm/OiqTUBokr/SUJPJCDBElzI3Y=
+
+Name: WEB-INF/pages/monitor/dashboard/heatChart.jsp
+SHA1-Digest: HxdbNcihdMK3AKboezVGi0hU8n8=
+
+Name: WEB-INF/tiles/layouts/minimal.jsp
+SHA1-Digest: hP5U2b2HNNRd82gHmBwdX/OLX4o=
+
+Name: web/resources/js/tree.js
+SHA1-Digest: AO/Oc6q6XAdij/+9cDQPf+ftnnk=
+
+Name: web/resources/images/primaryTR.gif
+SHA1-Digest: ZxckGELTPEql3KHnLEcjo+78s1U=
+
+Name: web/resources/images/successIcon11.png
+SHA1-Digest: fcqFVMYXN3X/dgapyg+KorhTFjw=
+
+Name: WEB-INF/lib/activation.jar
+SHA1-Digest: qIJgj92eAYgwp00xVBGdtajgf8I=
+
+Name: WEB-INF/lib/aspectjlib.jar
+SHA1-Digest: NT1ddgzMXf4nEFqO+r+a/5dtHOo=
+
+Name: web/resources/images/treenode_expand_minus.gif
+SHA1-Digest: Z/40YX3uCalqDq6RyfYirFsWpaM=
+
+Name: web/resources/images/undoIcon16.png
+SHA1-Digest: zHxplzsD9xgaWhXZFID+pgwOoX8=
+
+Name: web/resources/js/notice.js
+SHA1-Digest: QzungKNacOTN9PDLvvBKcfQKOhs=
+
+Name: WEB-INF/lib/asm.jar
+SHA1-Digest: mzJhAALmD7NpuftVSMhV72TiUgc=
+
+Name: web/resources/images/successDot.png
+SHA1-Digest: 9W8qtiyLwx0Zv9Rjjgk/Foc7VXA=
+
+Name: web/resources/images/warningIcon11.png
+SHA1-Digest: 2xwlShc5xJIwQWdArqf3Iq0xbDs=
+
+Name: web/resources/images/counterOverflowCritical.png
+SHA1-Digest: oEDzBRSehNmUvTQwLsrxuf76VkY=
+
+Name: WEB-INF/pages/monitor/graphs/graphs.jsp
+SHA1-Digest: 9EqaR9zz+GHYERqTWH0OK6mBIU8=
+
+Name: web/resources/images/mysql_network_logo_big.png
+SHA1-Digest: TWOgwOYoOukVDAxZRSbsD7uYEmo=
+
+Name: web/resources/images/relationshipIcon11.png
+SHA1-Digest: 7CtBvup5wH9jTSye7mJnTTwjh1Y=
+
+Name: WEB-INF/lib/antlr-2.7.2.jar
+SHA1-Digest: vkQZHJELm3j2QazHC3Z8wDWmoxk=
+
+Name: web/resources/images/help/en/expanded-graph.png
+SHA1-Digest: Ad1LEhAaPjNlgNS5yHhnwg5cBUs=
+
+Name: WEB-INF/lib/sigar-x86-winnt.dll
+SHA1-Digest: vV9JXPlhdxC52BJSH6EkJilqvVk=
+
+Name: web/resources/images/productName.jpg
+SHA1-Digest: rX9Ayb1hb7dm0ju0FJUzTC8VgOA=
+
+Name: web/resources/js/rowDisplayToggle.js
+SHA1-Digest: mXb0MzWNQP772Tq+DaIkvx/z0yo=
+
+Name: web/resources/images/criticalIcon11.png
+SHA1-Digest: ol3kyvm6RhsrxS5Xw+cm1d+sLkA=
+
+Name: web/resources/images/help/en/server-graphs.png
+SHA1-Digest: HXEkKGsMcHzBUOJbNtkL5k/wNC0=
+
+Name: web/resources/images/failureIcon11.png
+SHA1-Digest: p6iBo519sjYMvxlifpx/Ugy+i2A=
+
+Name: web/resources/images/help/en/email-settings.png
+SHA1-Digest: x3wSyXOpWrz4af69tX0qtVRfACY=
+
+Name: web/resources/images/tertiaryTR.gif
+SHA1-Digest: 4ZDkXGbP3rvmFc26Rvf0OHZYRt8=
+
+Name: web/resources/images/secondaryTL.gif
+SHA1-Digest: yBTSD1rRJmnuCGCOWiY1BtPkA84=
+
+Name: web/resources/js/pngbehavior.htc
+SHA1-Digest: xhx+kn8OMSIvljPwYXBhG437dtk=
+
+Name: web/resources/images/failureDot.png
+SHA1-Digest: WGMEFdHt3vhNYrU5TfRqZfEPxb0=
+
+Name: web/resources/images/secondaryTR.png
+SHA1-Digest: Zbhp04xICPp2o8f8mq8xeYNKIA4=
+
+Name: web/resources/images/treenode_grid_l.gif
+SHA1-Digest: V9VhlOyUUq6RqCzK+/p5rEIViVA=
+
+Name: web/resources/images/serverIcon11.png
+SHA1-Digest: KR6+Z8ZKCoO96qnBA55G/c3/ATY=
+
+Name: web/resources/images/tertiaryTL.gif
+SHA1-Digest: Dq1f3V4g3eAe4WjOHbFuGbZfACw=
+
+Name: web/resources/js/datePicker.js
+SHA1-Digest: 6M/rDDPqOP3YaL0ic4wSBJh+GU8=
+
+Name: web/resources/images/sortDown.gif
+SHA1-Digest: OAVS94MLIUj2Jr6VvlQ6YkLrqUM=
+
+Name: web/resources/images/status_severe_16x16.png
+SHA1-Digest: kWR6pGQX30IZL6wrZSpO6D7TjTw=
+
+Name: web/resources/images/secondaryBGRight.gif
+SHA1-Digest: FodEvp2CUUqdORTjWPxgey+NWMI=
+
+Name: WEB-INF/lib/asm-attrs.jar
+SHA1-Digest: nKplJ0MUGPiXKMOJiRoi7vTlOUs=
+
+Name: web/resources/images/help/en/agent-login.png
+SHA1-Digest: VGSwIPXkYjsbAs7UMvvANJuQ/Rs=
+
+Name: web/resources/images/expandPlus.gif
+SHA1-Digest: 8FUwWJ1PQ8VUslQgwJA8cOmPHAM=
+
+Name: WEB-INF/lib/commons-dbcp.jar
+SHA1-Digest: f9sJxFtpQ72und6F+58isx4Ns3Q=
+
+Name: web/resources/images/securityIcon11.png
+SHA1-Digest: PCJG9GtFtEAf/9Lh67of1ZkBLp4=
+
+Name: WEB-INF/lib/commons-fileupload-1.2.jar
+SHA1-Digest: vlvZ/Wv5e+YfAbvNPMbYdXoFt+s=
+
+Name: web/resources/images/homeIcon16.png
+SHA1-Digest: R1x6Ms3/0KMUwQVGatbT328sDLI=
+
+Name: web/resources/images/databaseIcon16.png
+SHA1-Digest: bRdTSVR+t1LTcbaF1eQQOUv2njo=
+
+Name: WEB-INF/widget.tld
+SHA1-Digest: qtkMCqEweM2GE7i7Jqd4rw374f4=
+
+Name: WEB-INF/pages/monitor/advisors/currentSchedule.jsp
+SHA1-Digest: 6CAkfuj4YCEu4RcAcjWNpuvE9pI=
+
+Name: WEB-INF/pages/settings/global/global.jsp
+SHA1-Digest: z8EaGhP7GJnIWHlheDBUegnW21c=
+
+Name: web/resources/images/secondaryTL.png
+SHA1-Digest: fWl7/9mn1cTTdhtO5d6OqMrqo/A=
+
+Name: web/resources/images/expandNone.gif
+SHA1-Digest: /XZWDvNjQ9AcRE3jupiPjtz8Epw=
+
+Name: web/resources/images/tabBGTop.gif
+SHA1-Digest: ZGuLHk3JxC/1jCh0mg2IagZYf6I=
+
+Name: web/resources/images/secondaryBR.png
+SHA1-Digest: 2OGFSrNFl4q5IE1Z/oRBcXj7b4w=
+
+Name: web/resources/images/OKDot.png
+SHA1-Digest: zF9I0GbG+RgutWYE+Xc0b5jKZyg=
+
+Name: WEB-INF/pages/auth.jsp
+SHA1-Digest: YpKlFS8hQRJUJebhiHsX81b8BeM=
+
+Name: web/resources/images/calendarIcon.jpg
+SHA1-Digest: 5GPVGf+YWMGjEjGC1iECVtG7rY8=
+
+Name: web/resources/images/graphNotAvail.gif
+SHA1-Digest: 3k5feFd72Wk4LfCkrnhHbcI7oCc=
+
+Name: web/resources/images/unknownDot.png
+SHA1-Digest: 96qByTRnsDb+F1iO31skc+m+lYY=
+
+Name: web/resources/images/counterOverflowInfo.png
+SHA1-Digest: IGBmOzAX1gczLnCMAACV7zLGVDQ=
+
+Name: WEB-INF/tiles/layouts/help.jsp
+SHA1-Digest: dw3UMEhA9xlxVS20aiwF5LVl/rY=
+
+Name: WEB-INF/pages/monitor/advisors/addToSchedule.jsp
+SHA1-Digest: zcoxeJMmSbwqdRHqUSGaY2D6gDg=
+
+Name: web/resources/images/logo.jpg
+SHA1-Digest: r4lI/umyOFqlKFAiAukyDi+9nFo=
+
+Name: WEB-INF/lib/bcel-5.1.jar
+SHA1-Digest: wOhMV1GjhVIu5v2lr+hT1sbcE44=
+
+Name: web/resources/images/secondaryBL.png
+SHA1-Digest: CVbW81UWLeZDPr+x5kSqqD27V7c=
+
+Name: web/resources/images/tertiaryOnBR.gif
+SHA1-Digest: Vjh+1FPA6GvK3GpzCB5i0NHf/S8=
+
+Name: WEB-INF/tiles.xml
+SHA1-Digest: a+fNeceUi4Uia56yIqsXPkecNmg=
+
+Name: web/resources/css/logs.css
+SHA1-Digest: sJ1cOXweIWYofYOqeFyhZPCzCNU=
+
+Name: web/resources/images/tertiaryOnTL.gif
+SHA1-Digest: gXMn5YK2ZUtyrAdo7UKt40+RDpU=
+
+Name: WEB-INF/pages/setup.jsp
+SHA1-Digest: yeQuO3JAhDoW5ztgV+BqeeTRrMg=
+
+Name: WEB-INF/lib/commons-beanutils-1.6.jar
+SHA1-Digest: dxBzij5/GQ/6CErYP4xNWHDTm6g=
+
+Name: WEB-INF/lib/commons-digester-1.8.jar
+SHA1-Digest: lEsaTTXov+FKMMdDiKQnKCm6lNU=
+
+Name: web/resources/images/primaryTL.gif
+SHA1-Digest: jpM5DjUHmgSJGkwGEgOQUdloXNM=
+
+Name: web/resources/images/status_warning_16x16.png
+SHA1-Digest: ua6O2inTdaGiyNTJ6UzkXfHqtIc=
+
+Name: web/resources/images/undoIcon11.png
+SHA1-Digest: VQtBjn5GUGA4wElUQFXQPQDV/4k=
+
+Name: WEB-INF/pages/monitor/advisors/manageRule.jsp
+SHA1-Digest: s/d+8MOaB0YlSA0Kk/BsvLT/ioM=
+
+Name: WEB-INF/lib/aspectjrt.jar
+SHA1-Digest: ZZPuqfjHjXr9V0nwd0OjYn7GPek=
+
+Name: web/resources/images/tabBGRight.gif
+SHA1-Digest: OfzUoIpdVMerNbHN81L69hQl490=
+
+Name: web/resources/images/help/en/events-screen.png
+SHA1-Digest: LThb4V26KW6mN37ZLj/X6yqSODE=
+
+Name: web/resources/images/tertiaryOnBGTop.gif
+SHA1-Digest: LxuYegHH0lWg4eRvs8RqX7FmAqc=
+
+Name: web/resources/images/helpIcon.png
+SHA1-Digest: FOWwHxTi7sJ9dJL3MdMO2WzfvLI=
+
+Name: web/resources/images/upDot.png
+SHA1-Digest: 5TMEzr2tXpC+F22E98XmvxoRI80=
+
+Name: web/resources/images/expandMinus.gif
+SHA1-Digest: 5S/hDK/jDVhmXpUNF03V5/0aKzs=
+
+Name: web/resources/images/infoIcon11.png
+SHA1-Digest: oVfEKBkNAGnqtkrAAkTZUmD4uCM=
+
+Name: WEB-INF/lib/hibernate3.jar
+SHA1-Digest: ngnb4Ri4m1uV9e7Wk1Qga26oIbE=
+
+Name: WEB-INF/lib/struts2-codebehind-plugin-2.0.6.jar
+SHA1-Digest: ep9thODv0wrlTlcIqJk1HMk5BzI=
+
+Name: WEB-INF/lib/oro-2.0.8.jar
+SHA1-Digest: x2hiD080WyJZLZDbQCxOqNXWFs8=
+
+Name: web/resources/images/copyIcon11.png
+SHA1-Digest: Huy0sEydkuWkbbSz0RmjTSJ5jyc=
+
+Name: WEB-INF/lib/dom4j-1.6.1.jar
+SHA1-Digest: gO82q4iw2yQV12gaiehcfPShzXQ=
+
+Name: web/resources/images/criticalDot.png
+SHA1-Digest: z1uX1RIT4w4zbTCrKq8dOTfKEl8=
+
+Name: web/resources/images/tabOnTR.gif
+SHA1-Digest: O6/RLfNeVAzsl9DdPlUWae44nQQ=
+
+Name: WEB-INF/pages/help/jspPrepender.txt
+SHA1-Digest: Wi/Pi9hLP45vmXX4vILr96j8jgw=
+
+Name: WEB-INF/pages/monitor/events/index.jsp
+SHA1-Digest: 6W9zQFuXfiNC73BB9sB+xy3hgi4=
+
+Name: web/resources/images/help/en/advisors-edit.png
+SHA1-Digest: 8gyNTo7Kogm9YOm4vLiZuUmlBvM=
+
+Name: WEB-INF/pages/monitor/advisors/manageRules.jsp
+SHA1-Digest: cO/dG0ZZ0CnDQBfKf1McKshPQh8=
+
+Name: web/resources/images/confgIcon16.png
+SHA1-Digest: CtmG/uqJ7s0bbIogA80Z11SPzTI=
+
+Name: WEB-INF/lib/merlin.jar
+SHA1-Digest: xbJpvREglgSHb5h2JiSdp5raorU=
+
+Name: WEB-INF/pages/settings/userpreferences/userPreferences.jsp
+SHA1-Digest: UD6MCY7x+ewnMRoazHSSobI1MSY=
+
+Name: web/resources/css/tree.css
+SHA1-Digest: S4Nc/ARvqckpxNpmdl1SrBKzYYM=
+
+Name: web/resources/images/table_header.png
+SHA1-Digest: WX1sircJSd6nf12UTF8dOARwXTY=
+
+Name: web/resources/js/misc.js
+SHA1-Digest: zSgBiWjE1E8zfHnlLWxRcORUKUM=
+
+Name: WEB-INF/lib/jep-2.3.0.jar
+SHA1-Digest: /mzCQIVLgXD8GNL59Sy7LMfGHHs=
+
+Name: WEB-INF/lib/radeox.jar
+SHA1-Digest: K5vUDkjSgehDoMT6nctQ22DFpkE=
+
+Name: WEB-INF/pages/json.jsp
+SHA1-Digest: wKviobvGfU+hQWQOpl+jZSyKzok=
+
+Name: WEB-INF/lib/commons-io-1.3.1.jar
+SHA1-Digest: bFc5tUx3GMN/lkNZV6vG1zOCuwg=
+
+Name: web/resources/images/status_severe_24x24.png
+SHA1-Digest: xlcDicX9gVwuF24v8lM2flDnLiw=
+
+Name: web/resources/images/secondaryTR.gif
+SHA1-Digest: 3eGf5u53xkWWTg9ZXdNy9jnfcAA=
+
+Name: web/resources/images/status_ok_16x16.png
+SHA1-Digest: IJonEnoul+IRctoLDz/yuN8biuU=
+
+Name: web/resources/images/spacer.gif
+SHA1-Digest: sw86e5BdQeCbPOBHL1zHeSQgo6Q=
+
+Name: web/resources/images/severeIcon11.png
+SHA1-Digest: fKBxPe3s5P9ZXDFTyK0q1vXCJsg=
+
+Name: WEB-INF/lib/struts2-jfreechart-plugin-2.0.6.jar
+SHA1-Digest: YEtK3AFAeJtcdu4e7ShfmIjBbZI=
+
+Name: WEB-INF/lib/struts-core-1.3.5.jar
+SHA1-Digest: YVCEF+p90MnpeC6AfuRLyp8BGDY=
+
+Name: WEB-INF/lib/jta.jar
+SHA1-Digest: 4XAAevVKo6H6TygogXRp2GG81rE=
+
+Name: WEB-INF/lib/junit.jar
+SHA1-Digest: FGDXdET4gNB1QqoL4eTwV+41FXw=
+
+Name: Auth.action
+SHA1-Digest: T7O8XVy6eVw9yv1kk5lLyFl1Im8=
+
+Name: web/resources/images/editIcon11.png
+SHA1-Digest: tmhUejg3fVQI1mkF432AKigRaP0=
+
+Name: WEB-INF/pages/settings/servers/manageServers.jsp
+SHA1-Digest: ozVf9VYhEID5B9Bp/l5qJM7hVHs=
+

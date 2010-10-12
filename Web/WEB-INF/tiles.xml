@@ -1,0 +1,176 @@
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+	<definition name="defaultLayout" template="/WEB-INF/tiles/layouts/default.jsp">
+		<put-attribute name="titleKey" value="" />
+		<put-attribute name="section" value="" />
+		<put-attribute name="subSection" value="" />
+		<put-attribute name="autoRefresh" value="false" />
+		<put-attribute name="usesTree" value="false" />
+	</definition>
+	
+	<definition name="heatChartLayout" template="/WEB-INF/tiles/layouts/heatChart.jsp" />
+	
+	<definition name="helpLayout" template="/WEB-INF/tiles/layouts/help.jsp" />
+	
+	<definition name="minimalLayout" template="/WEB-INF/tiles/layouts/minimal.jsp">
+		<put-attribute name="titleKey" value="" />
+	</definition>
+	
+	<definition name="Help.page" extends="helpLayout" />
+	
+	<definition name="About.page" extends="minimalLayout">
+		<put-attribute name="titleKey" value="about.title" />
+		<put-attribute name="body" type="template" value="/WEB-INF/pages/about.jsp" />
+	</definition>
+	
+	<definition name="Auth.page" extends="defaultLayout">
+		<put-attribute name="titleKey" value="auth.title" />
+		<put-attribute name="body" type="template" value="/WEB-INF/pages/auth.jsp" />
+	</definition>
+	
+	<definition name="Error.page" extends="defaultLayout">
+		<put-attribute name="titleKey" value="errorPage.title" />
+		<put-attribute name="body" type="template" value="/WEB-INF/pages/error.jsp" />
+	</definition>
+	
+	<definition name="NotFound.page" extends="defaultLayout">
+		<put-attribute name="titleKey" value="notFound.title" />
+		<put-attribute name="body" type="template" value="/WEB-INF/pages/notFound.jsp" />
+	</definition>
+
+	<definition name="Setup.page" extends="defaultLayout">
+		<put-attribute name="titleKey" value="setup.title" />
+		<put-attribute name="body" type="template" value="/WEB-INF/pages/setup.jsp" />
+	</definition>
+	
+	<definition name="Dashboard.page" extends="defaultLayout">
+		<put-attribute name="titleKey" value="dashboard.title" />
+		<put-attribute name="section" value="dashboard" />
+		<put-attribute name="usesTree" value="true" />
+		<put-attribute name="autoRefresh" value="true" />
+		<put-attribute name="body" type="template" value="/WEB-INF/pages/monitor/dashboard/dashboard.jsp" />
+	</definition>
+	
+	<definition name="HeatChart.page" extends="heatChartLayout">
+		<put-attribute name="body" type="template" value="/WEB-INF/pages/monitor/dashboard/heatChart.jsp" />
+	</definition>
+	
+	<definition name="Events.page" extends="defaultLayout">
+		<put-attribute name="titleKey" value="events.title" />
+		<put-attribute name="section" value="events" />
+		<put-attribute name="usesTree" value="true" />
+		<put-attribute name="autoRefresh" value="true" />
+		<put-attribute name="body" type="template" value="/WEB-INF/pages/monitor/events/index.jsp" />
+	</definition>
+	
+	<definition name="Graphs.page" extends="defaultLayout">
+		<put-attribute name="titleKey" value="graphs.title" />
+		<put-attribute name="section" value="graphs" />
+		<put-attribute name="usesTree" value="true" />
+		<put-attribute name="autoRefresh" value="true" />
+		<put-attribute name="body" type="template" value="/WEB-INF/pages/monitor/graphs/graphs.jsp" />
+	</definition>
+	
+	<definition name="CurrentSchedule.page" extends="defaultLayout">
+		<put-attribute name="titleKey" value="advisors.currentSchedule.title" />
+		<put-attribute name="section" value="advisors" />
+		<put-attribute name="subSection" value="currentSchedule" />
+		<put-attribute name="usesTree" value="true" />
+		<put-attribute name="body" type="template" value="/WEB-INF/pages/monitor/advisors/currentSchedule.jsp" />
+	</definition>
+	
+	<definition name="AddToSchedule.page" extends="defaultLayout">
+		<put-attribute name="titleKey" value="advisors.addToSchedule.title" />
+		<put-attribute name="section" value="advisors" />
+		<put-attribute name="subSection" value="addToSchedule" />
+		<put-attribute name="usesTree" value="true" />
+		<put-attribute name="body" type="template" value="/WEB-INF/pages/monitor/advisors/addToSchedule.jsp" />
+	</definition>
+	
+	<definition name="ManageRules.page" extends="defaultLayout">
+		<put-attribute name="titleKey" value="advisors.manageRules.title" />
+		<put-attribute name="section" value="advisors" />
+		<put-attribute name="subSection" value="manageRules" />
+		<put-attribute name="body" type="template" value="/WEB-INF/pages/monitor/advisors/manageRules.jsp" />
+	</definition>
+	
+	<definition name="ManageRule.page" extends="defaultLayout">
+		<put-attribute name="titleKey" value="advisors.manageRule.title" />
+		<put-attribute name="section" value="advisors" />
+		<put-attribute name="subSection" value="manageRules" />
+		<put-attribute name="body" type="template" value="/WEB-INF/pages/monitor/advisors/manageRule.jsp" />
+	</definition>
+	
+	<!-- title needs to be dynamic and include rule name -->
+	<definition name="EditRule.page" extends="defaultLayout">
+		<put-attribute name="titleKey" value="advisors.editRule.title" />
+		<put-attribute name="section" value="advisors" />
+		<put-attribute name="subSection" value="manageRules" />
+		<put-attribute name="body" type="template" value="/WEB-INF/pages/monitor/advisors/editRule.jsp" />
+	</definition>
+	
+	<definition name="CheckForUpdates.page" extends="defaultLayout">
+		<put-attribute name="titleKey" value="advisors.checkForUpdates.title" />
+		<put-attribute name="section" value="advisors" />
+		<put-attribute name="subSection" value="checkForUpdates" />
+		<put-attribute name="body" type="template" value="/WEB-INF/pages/monitor/advisors/checkForUpdates.jsp" />
+	</definition>
+	
+	<definition name="ReplicationMonitoring.page" extends="defaultLayout">
+		<put-attribute name="titleKey" value="replication.monitoring.title" />
+		<put-attribute name="section" value="replication" />
+		<put-attribute name="autoRefresh" value="true" />
+		<put-attribute name="body" type="template" value="/WEB-INF/pages/monitor/replication/replicationMonitoring.jsp" />
+	</definition>
+
+	<definition name="GlobalSettings.page" extends="defaultLayout">
+		<put-attribute name="titleKey" value="settings.global.title" />
+		<put-attribute name="section" value="settings" />
+		<put-attribute name="subSection" value="globalSettings" />
+		<put-attribute name="body" type="template" value="/WEB-INF/pages/settings/global/global.jsp" />
+	</definition>
+	
+	<definition name="Logs.page" extends="defaultLayout">
+		<put-attribute name="titleKey" value="settings.logs.title" />
+		<put-attribute name="section" value="settings" />
+		<put-attribute name="subSection" value="logs" />
+		<put-attribute name="body" type="template" value="/WEB-INF/pages/settings/logs/logs.jsp" />
+	</definition>
+	
+	<definition name="ShowLog.page" extends="defaultLayout">
+		<put-attribute name="titleKey" value="settings.logs.title" />
+		<put-attribute name="section" value="settings" />
+		<put-attribute name="subSection" value="logs" />
+		<put-attribute name="body" type="template" value="/WEB-INF/pages/settings/logs/showLog.jsp" />
+	</definition>
+	
+	<definition name="Notification.page" extends="defaultLayout">
+		<put-attribute name="titleKey" value="settings.notification.title" />
+		<put-attribute name="section" value="settings" />
+		<put-attribute name="subSection" value="notification" />
+		<put-attribute name="body" type="template" value="/WEB-INF/pages/settings/notification/notification.jsp" />
+	</definition>
+	
+	<definition name="ManageServers.page" extends="defaultLayout">
+		<put-attribute name="titleKey" value="settings.servers.title" />
+		<put-attribute name="section" value="settings" />
+		<put-attribute name="subSection" value="servers" />
+		<put-attribute name="body" type="template" value="/WEB-INF/pages/settings/servers/manageServers.jsp" />
+	</definition>
+	
+	<definition name="UserPreferences.page" extends="defaultLayout">
+		<put-attribute name="titleKey" value="settings.userpreferences.title" />
+		<put-attribute name="section" value="settings" />
+		<put-attribute name="subSection" value="userPreferences" />
+		<put-attribute name="body" type="template" value="/WEB-INF/pages/settings/userpreferences/userPreferences.jsp" />
+	</definition>
+	
+	<definition name="ManageUsers.page" extends="defaultLayout">
+		<put-attribute name="titleKey" value="settings.users.title" />
+		<put-attribute name="section" value="settings" />
+		<put-attribute name="subSection" value="users" />
+		<put-attribute name="body" type="template" value="/WEB-INF/pages/settings/users/manageUsers.jsp" />
+	</definition>
+
+</tiles-definitions>
