@@ -6,7 +6,7 @@ $title = "Domonator";
 $name = "Domonator";
 include ('header_refresh.php');
 
-$username = "jnfurst";
+$username = "Jnfurst";
 ?>
 									<table cellpadding="0" cellspacing="0" width="100%" id="tabBar">
 										<tr>
@@ -14,7 +14,7 @@ $username = "jnfurst";
 												<table cellpadding="0" cellspacing="0">
 													<tr>
 														<td class="tabLeft"><img src="web/resources/images/spacer.gif" width="8" height="7" alt="" /></td>
-														<td class="tabBody"><a title="Monitor" href="index.php"><img src="web/resources/images/homeIcon11.png" width="11" height="11" alt="Monitor" /> Monitor</a></td>
+														<td class="tabBody"><a title="<?php echo $username ?>" href="index.php"><img src="web/resources/images/homeIcon11.png" width="11" height="11" alt="Monitor" /> <?php echo $username ?></a></td>
 														<td class="tabRight"><img src="web/resources/images/spacer.gif" width="8" height="7" alt="" /></td>
 													</tr>
 												</table>
