@@ -145,13 +145,6 @@ include ('tree.php');?>
 							<tr>
 								<td class="titleBar">
 								<?php
-$query = "SELECT event_id, account_name, event_type, event_date FROM $DB_NAME_LOGS.account_logs ORDER BY event_date DESC";
-$result = @mysql_query ($query);
-$total = mysql_numrows($result);
-
-$query3 = "SELECT event_id, account_name, event_type, event_date FROM $DB_NAME_LOGS.account_logs ORDER BY event_date DESC limit 8";
-$result3 = @mysql_query ($query3);
-$num = mysql_numrows($result3);
 								echo "
 									<div class='title'><span class='titleModifier'>$name: Recent Events</span></div>
 									<div class='paging'>[ <span class='pagingHighlight'>$num of $total ]</div>
@@ -171,8 +164,7 @@ $num = mysql_numrows($result3);
 											";
 											
 
-while ($row = mysql_fetch_array ($result3, MYSQL_NUM))
-	{
+
 	
 	
 		echo "<tr class='listRowAlt'>
@@ -182,9 +174,8 @@ while ($row = mysql_fetch_array ($result3, MYSQL_NUM))
 													<td title='6 minutes ago'>$row[3]</td>
 													
 												</tr>
-	";
-	
-	}?>
+";
+	?>
 	
 												
 											
