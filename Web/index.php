@@ -78,10 +78,8 @@ include ('tree.php');?>
 
 						<table cellpadding="0" cellspacing="0" width="100%">
 
-							<tr>
-								<?php
+						<?php
 								echo "
-							</tr>
 							<tr>
 								<td class='listBox'>
 									<table cellpadding='0' cellspacing='0' width='100%'>
@@ -94,12 +92,8 @@ include ('tree.php');?>
 											</tr>
 											
 											";
-											
-
-
-	
-	
-		echo "<tr class='listRowAlt'>
+									
+													echo "<tr class='listRowAlt'>
 													<td>builds-list</td>
 													<td>Public</td>
 													<td style='white-space: normal;'>$row[1]</td>
@@ -127,7 +121,35 @@ include ('tree.php');?>
 						<div class="titleBar"><span class="titleModifier">Lists you manage</span></div>
 						<div  style="padding: 12px 5px 3px 5px;">
 						<table cellpadding="0" cellspacing="0" align="center">
-							<tr><td>place holder</td></tr>
+							<?php
+								echo "
+							<tr>
+								<td class='listBox'>
+									<table cellpadding='0' cellspacing='0' width='100%'>
+										<tbody>
+											<tr class='titleRow'>
+												<td>Name</td>
+												<td>Type</td>
+												<td>Account</td>
+												<td>Date & Time</td>
+											</tr>
+											
+											";
+									
+													echo "<tr class='listRowAlt'>
+													<td>builds-list</td>
+													<td>Public</td>
+													<td style='white-space: normal;'>$row[1]</td>
+													<td title='6 minutes ago'>$row[3]</td>
+													
+												</tr>";?>
+	
+												
+											
+										</tbody>
+									</table>
+								</td>
+							</tr>
 						</table>
 						</div>
 					</td>
