@@ -88,113 +88,12 @@ include ('tree.php');?>
 
 									<td>
 
-										
-
-										<table cellpadding="5" cellspacing="0">
-
-											<tr>
-
-												
-
-													<td style="text-align: center;">
-
-														<div class="itemLabel">Overall Logged in Users</div>
-
-														<table cellpadding="0" cellspacing="0">
-
-															<tr>
-
-																<td class="graphSurround">
-
-																																<img src="graphs.php" alt="Overall Logged in Users"/></td>
-
-															</tr>
-
-														</table>
-
-													</td>
-
-													
-
-												
-
-													<td style="text-align: center;">
-
-														<div class="itemLabel">Logged in Users Per Planet</div>
-
-														<table cellpadding="0" cellspacing="0">
-
-															<tr>
-
-																<td class="graphSurround"><img src="web/resources/images/graphs/cpu.bmp" width="220" height="110" alt="Logged in Users Per Planet"/></td>
-
-															</tr>
-
-														</table>
-
-													</td>
-
-													
-
-														</tr><tr>
-
-													
-
-												
-
-													<td style="text-align: center;">
-
-														<div class="itemLabel">Connections</div>
-
-														<table cellpadding="0" cellspacing="0">
-
-															<tr>
-
-																<td class="graphSurround"><img src="web/resources/images/graphs/connections.bmp" width="220" height="110" alt="Connections"/></td>
-
-															</tr>
-
-														</table>
-
-													</td>
-
-													
-
-												
-
-													<td style="text-align: center;">
-
-														<div class="itemLabel">Database Activity</div>
-
-														<table cellpadding="0" cellspacing="0">
-
-															<tr>
-
-																<td class="graphSurround"><img src="web/resources/images/graphs/activity.bmp" width="220" height="110" alt="Database Activity"/></td>
-
-															</tr>
-
-														</table>
-
-													</td>
-
-													
-
-												
-
-											</tr>
-
-										</table>
-
-										
-
+				
 										<center>
 
 										<div class="itemContents">
 
-											<span class="listLink"><img src="web/resources/images/successIcon11.png" border="0" width="11" height="11" alt="" /> edit favorites</span>
-
-											<span class="listLink"><img src="web/resources/images/confgIcon11.png" border="0" width="11" height="11" alt="" /> configure graphs</span>
+											stuff goes here
 
 										</div></center>
 
