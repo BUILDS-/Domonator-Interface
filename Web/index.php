@@ -127,54 +127,7 @@ include ('tree.php');?>
 						<div class="titleBar"><span class="titleModifier">Lists you manage</span></div>
 						<div  style="padding: 12px 5px 3px 5px;">
 						<table cellpadding="0" cellspacing="0" align="center">
-							<tr>
-								<td class="listBoxCollapsible">
-									<table cellpadding="0" cellspacing="0" id="heatChart">
-																			</table>
-									<table cellpadding="0" cellspacing="0" width="100%">
-										<tr>
-											<td align="left"><div class="itemLabel"><a href="javascript://" onclick="toggleLegend()" id="heatChartLegendLabel">
-												Show Legend</a></div></td>
-										</tr>
-									</table>
-									<table cellpadding="0" cellspacing="0" align="left" id="heatChartLegend" style="display: none;">
-										<tr>
-											<td style="border: 1px solid #AAAAAA; background: #FFFFEA; padding: 5px; text-align: left;">
-												<table cellpadding="0" cellspacing="7">
-													<tr>
-														<td nowrap="nowrap" style="font-weight: bold; padding-right: 15px;">
-														Server Status</td>
-							
-													</tr>
-													<tr>
-														<td><img src="web/resources/images/upDot.png" title="Online" width="11" height="11" alt="up" /> 
-														Online</td>
-														
-													</tr>
-													<tr>
-														<td><img src="web/resources/images/downDot.png" title="Offline" width="11" height="11" alt="down" /> 
-														Offline</td>
-														
-													</tr>
-													<tr>
-														<td><img src="web/resources/images/warningDot.png" title="Initializing" width="11" height="11" alt="unknown" /> 
-														Initializing</td>
-														
-													</tr>
-													<tr>
-														<td></td>
-														
-													</tr>
-													<tr>
-														<td></td>
-														
-													</tr>
-												</table>
-											</td>
-										</tr>
-									</table>
-								</td>
-							</tr>
+							<tr><td>place holder</td></tr>
 						</table>
 						</div>
 					</td>
