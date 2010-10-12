@@ -95,10 +95,13 @@ include ('tree.php');?>
 											";
 												foreach($subs as $key => $value)
 												{
+													$command = "/var/www/major/weblogin/getdescription.pl $value";
+													exec($command  . " 2>&1", $desc);
+													
 													echo "
 													<tr class='listRowAlt'>
 														<td>$value</td>
-														<td>Public</td>
+														<td>$desc[0]</td>
 														<td></td>
 													</tr>";
 												
