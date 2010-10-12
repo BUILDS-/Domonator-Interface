@@ -93,7 +93,7 @@ include ('tree.php');?>
 											</tr>
 											
 											";
-												foreach($subs as $key2 => $value2)
+												foreach($subs as $key => $value)
 												{
 													$command2 = "/var/www/major/weblogin/getdescription.pl $value";
 													exec($command2  . " 2>&1", $desc);
