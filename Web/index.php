@@ -178,18 +178,6 @@ include ('tree.php');?>
 						</div>
 					</td>
 				</tr>
-				
-			</table>
-				</tr>
-				
-					<tr>
-						<td>
-						<br/><br/>
-							
-						</td>
-					</tr>
-				
-			</table>
 		</td>
 	</tr>
 </table>
