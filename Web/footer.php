@@ -31,13 +31,10 @@
 											
 											<td id="footerInfo">
 											<?php
-											if (isset($_COOKIE['username']))
-											{
-												//echo "Logged in as <strong> $_COOKIE['username'] </strong>";
 											echo 'Logged in as "<strong>';
 											echo $username;
 											echo'</strong>" ';
-											}
+											
 											echo'(';
 											$today = date("F j, Y, g:i a");
 											echo $today;
