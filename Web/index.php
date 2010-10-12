@@ -78,8 +78,8 @@ include ('tree.php');?>
 
 					<td>
 
-						<div class="titleBar"><span class="titleModifier">Lists you are subscribed to:</span></div>
-						<div class='paging'>[ <span class='pagingHighlight'>$num of $total ]</div>
+						<div class="titleBar"><span class="titleModifier">Lists you are subscribed to:</span><div class='paging'>[ <span class='pagingHighlight'>$num of $total ]</div></div>
+						
 						<div class="basicBox" style="padding: 5px;" align="center">
 
 							<table cellpadding="0" cellspacing="0">
@@ -117,12 +117,14 @@ include ('tree.php');?>
 
 							<tr>
 
-								<td class="titleBar">
+								<!-- <td class="titleBar">
+								
+								
+									 <div class='title'><span class='titleModifier'> </span></div>
+									<div class='paging'>[ <span class='pagingHighlight'>$num of $total ]</div> 
+								</td>-->
 								<?php
 								echo "
-									<!-- <div class='title'><span class='titleModifier'> </span></div>
-									<div class='paging'>[ <span class='pagingHighlight'>$num of $total ]</div> -->
-								</td>
 							</tr>
 							<tr>
 								<td class='listBox'>
