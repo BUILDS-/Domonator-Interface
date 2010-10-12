@@ -122,7 +122,10 @@ include ('tree.php');?>
 						<div  style="padding: 12px 5px 3px 5px;">
 						<table cellpadding="0" cellspacing="0" align="center">
 							<?php
-								echo "
+							$command = "/var/www/major/weblogin/getadmin.pl broglek@bu.edu";
+							exec($command  . " 2>&1", $output);
+							
+							echo "
 							<tr>
 								<td class='listBox'>
 									<table cellpadding='0' cellspacing='0' width='100%'>
@@ -135,14 +138,16 @@ include ('tree.php');?>
 											</tr>
 											
 											";
-									
+											foreach($output as $key => $value)
+												{
 													echo "<tr class='listRowAlt'>
-													<td>builds-list</td>
+													<td>$value</td>
 													<td>Public</td>
 													<td style='white-space: normal;'>$row[1]</td>
 													<td title='6 minutes ago'>$row[3]</td>
 													
-												</tr>";?>
+												</tr>";
+												}?>
 	
 												
 											
