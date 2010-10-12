@@ -66,10 +66,10 @@ include ('tree.php');?>
 
 <table cellpadding="0" cellspacing="0" width="100%">
 				<tr>
-					<td>
+					<td valign="top" style="border-right: 1px solid #AAAAAA;">
 						<table cellpadding="0" cellspacing="0" width="100%">
 							<tr>
-								<td class="titleBar">
+								<td>
 								<?php
 								echo "
 									<div class='title'><span class='titleModifier'>Lists you are subscribed to: </span></div>
