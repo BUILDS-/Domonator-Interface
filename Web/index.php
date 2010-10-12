@@ -115,7 +115,7 @@ include ('tree.php');?>
 				</tr>
 			</table>
 		</td>
-		<td style="background: #FFFFFF; border-bottom: 1px solid #C4C4C4;" valign="top">
+		<td  valign="top">
 			<table cellpadding="0" cellspacing="0" width="100%">
 				<tr>
 					<table cellpadding="0" cellspacing="0" width="100%">
