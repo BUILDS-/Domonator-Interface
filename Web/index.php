@@ -93,17 +93,18 @@ include ('tree.php');?>
 											</tr>
 											
 											";
-												foreach($subs as $key => $value)
+												foreach($subs as $key2 => $value2)
 												{
-													$command = "/var/www/major/weblogin/getdescription.pl $value";
-													exec($command  . " 2>&1", $desc);
+													$command2 = "/var/www/major/weblogin/getdescription.pl $value";
+													exec($command2  . " 2>&1", $desc);
 													
 													echo "
 													<tr class='listRowAlt'>
 														<td>$value</td>
-														<td>$desc[0]</td>
 														<td></td>
-													</tr>";
+														<td>$desc[0]</td>
+													</tr>"
+													$desc[0]= "";
 												
 												}?>
 	
