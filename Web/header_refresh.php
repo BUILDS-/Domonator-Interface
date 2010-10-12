@@ -53,8 +53,7 @@
 								<tr>
 									<td id="logo"><img src="images/logo.gif"  class="decoration"/></td>
 									<td id="logo">
-									<font size="7" color="#FFFFFF">SWGANH: 
-											Dashboard</font></td></tr>
+									<font size="7" color="#FFFFFF">Domonator</font></td></tr>
 								</table>
 											<table cellpadding="0" cellspacing="0" width="100%">											
 									<td width="100%" id="headerLinks">
@@ -94,7 +93,7 @@
 													</td>
 													
 													<td>
-														<a href="Help.action" target="_blank"><img src="web/resources/images/helpIcon.png" width="12" alt="" border="0" /> Help</a>
+														<a href="#" target="_blank"><img src="web/resources/images/helpIcon.png" width="12" alt="" border="0" /> Help</a>
 														&nbsp;
 														<a href="logout.php"><img src="web/resources/images/logOutIcon.png" width="12" alt="" border="0" /> Log Out</a>
 													</td>
