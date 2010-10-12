@@ -65,80 +65,6 @@ include ('header_refresh.php');
 include ('tree.php');?>
 
 <table cellpadding="0" cellspacing="0" width="100%">
-
-	<tr>
-		<td valign="top" style="border-right: 1px solid #AAAAAA;">
-			<table cellpadding="0" cellspacing="0" width="100%">
-				<tr>
-					<td>
-						<div class="titleBar"><span class="titleModifier"><?php echo $name; ?>: Lists you are subscribed to: </span></div>
-						<div class="basicBox" style="padding: 5px;" align="center">
-							<table cellpadding="0" cellspacing="0">
-								<tr>
-									<td>
-										
-										<table cellpadding="5" cellspacing="0">
-											<tr>
-												
-													<td style="text-align: center;">
-														<div class="itemLabel">Overall Logged in Users</div>
-														<table cellpadding="0" cellspacing="0">
-															<tr>
-																<td class="graphSurround">
-																<?php
-																?>
-																<img src="graphs.php" alt="Overall Logged in Users"/></td>
-															</tr>
-														</table>
-													</td>
-													
-												
-													<td style="text-align: center;">
-														<div class="itemLabel">Logged in Users Per Planet</div>
-														<table cellpadding="0" cellspacing="0">
-															<tr>
-																<td class="graphSurround"><img src="web/resources/images/graphs/cpu.bmp" width="220" height="110" alt="Logged in Users Per Planet"/></td>
-															</tr>
-														</table>
-													</td>
-													
-														</tr><tr>
-													
-												
-													<td style="text-align: center;">
-														<div class="itemLabel">Connections</div>
-														<table cellpadding="0" cellspacing="0">
-															<tr>
-																<td class="graphSurround"><img src="web/resources/images/graphs/connections.bmp" width="220" height="110" alt="Connections"/></td>
-															</tr>
-														</table>
-													</td>
-													
-												
-													<td style="text-align: center;">
-														<div class="itemLabel">Database Activity</div>
-														<table cellpadding="0" cellspacing="0">
-															<tr>
-																<td class="graphSurround"><img src="web/resources/images/graphs/activity.bmp" width="220" height="110" alt="Database Activity"/></td>
-															</tr>
-														</table>
-													</td>
-													
-												
-											</tr>
-										</table>
-										
-										<center>
-										<div class="itemContents">
-											<span class="listLink"><img src="web/resources/images/successIcon11.png" border="0" width="11" height="11" alt="" /> edit favorites</span>
-											<span class="listLink"><img src="web/resources/images/confgIcon11.png" border="0" width="11" height="11" alt="" /> configure graphs</span>
-										</div></center>
-									</td>
-								</tr>
-							</table>
-						</div>
-					</td>
-				</tr>
 				<tr>
 					<td>
 						<table cellpadding="0" cellspacing="0" width="100%">
@@ -146,7 +72,7 @@ include ('tree.php');?>
 								<td class="titleBar">
 								<?php
 								echo "
-									<div class='title'><span class='titleModifier'>$name: Recent Events</span></div>
+									<div class='title'><span class='titleModifier'>Lists you are subscribed to: </span></div>
 									<div class='paging'>[ <span class='pagingHighlight'>$num of $total ]</div>
 								</td>
 							</tr>
