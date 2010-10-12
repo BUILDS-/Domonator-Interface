@@ -148,7 +148,8 @@ include ('tree.php');?>
 										<tbody>
 											<tr class='titleRow'>
 												<td>Name</td>
-												<td>Type</td>
+												<td>Subscription Policy</td>
+												<td>Moderated</td>
 												<td>Description</td>
 											</tr>
 											
