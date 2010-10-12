@@ -79,6 +79,8 @@ include ('tree.php');?>
 						<table cellpadding="0" cellspacing="0" width="100%">
 
 						<?php
+						$command = "/var/www/major/weblogin/getsubs.pl broglek@bu.edu";
+							exec($command  . " 2>&1", $subs);
 								echo "
 							<tr>
 								<td class='listBox'>
@@ -92,14 +94,17 @@ include ('tree.php');?>
 											</tr>
 											
 											";
-									
+												foreach($mange as $key => $value)
+												{
 													echo "<tr class='listRowAlt'>
-													<td>builds-list</td>
+													<td>$value</td>
 													<td>Public</td>
 													<td style='white-space: normal;'>$row[1]</td>
 													<td title='6 minutes ago'>$row[3]</td>
 													
-												</tr>";?>
+													</tr>";
+												
+												}?>
 	
 												
 											
@@ -123,7 +128,7 @@ include ('tree.php');?>
 						<table cellpadding="0" cellspacing="0" align="center">
 							<?php
 							$command = "/var/www/major/weblogin/getadmin.pl broglek@bu.edu";
-							exec($command  . " 2>&1", $output);
+							exec($command  . " 2>&1", $manage);
 							
 							echo "
 							<tr>
@@ -138,7 +143,7 @@ include ('tree.php');?>
 											</tr>
 											
 											";
-											foreach($output as $key => $value)
+											foreach($mange as $key => $value)
 												{
 													echo "<tr class='listRowAlt'>
 													<td>$value</td>
