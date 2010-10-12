@@ -101,8 +101,8 @@ include ('tree.php');?>
 													echo "
 													<tr class='listRowAlt'>
 														<td>$value</td>
-														<td>$desc</td>
 														<td></td>
+														<td>$desc[0]</td>
 													</tr>";
 												
 												}?>
