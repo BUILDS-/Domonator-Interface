@@ -113,6 +113,7 @@ include ('tree.php');?>
 														<td>$desc[0]</td>
 													</tr>";
 												unset($desc);
+												unset($sp);
 												unset($mod);
 												}?>
 	
