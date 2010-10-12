@@ -71,7 +71,7 @@ include ('tree.php');?>
 			<table cellpadding="0" cellspacing="0" width="100%">
 				<tr>
 					<td>
-						<div class="titleBar"><span class="titleModifier"><?php echo $name; ?>: Graphs</span></div>
+						<div class="titleBar"><span class="titleModifier"><?php echo $name; ?>: Lists you are subscribed to: </span></div>
 						<div class="basicBox" style="padding: 5px;" align="center">
 							<table cellpadding="0" cellspacing="0">
 								<tr>
@@ -194,8 +194,7 @@ include ('tree.php');?>
 					<table cellpadding="0" cellspacing="0" width="100%">
 				<tr>
 					<td align="center">
-						<div class="titleBar"><span class="titleModifier">All 
-							Servers: Status</span></div>
+						<div class="titleBar"><span class="titleModifier">Lists you manage</span></div>
 						<div  style="padding: 12px 5px 3px 5px;">
 						<table cellpadding="0" cellspacing="0" align="center">
 							<tr>
