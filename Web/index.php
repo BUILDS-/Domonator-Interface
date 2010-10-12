@@ -23,30 +23,11 @@ $username = "jnfurst";
 												<table cellpadding="0" cellspacing="0">
 													<tr>
 														<td class="tabLeft"><img src="web/resources/images/spacer.gif" width="8" height="7" alt="" /></td>
-														<td class="tabBody"><img src="web/resources/images/securityIcon11.png" width="9" height="11" alt="Advisors" /> Advisors</td>
+														<td class="tabBody"><a title="Create List" href="#"><img src="web/resources/images/securityIcon11.png" width="9" height="11" alt="Create List" /> Create List</td>
 														<td class="tabRight"><img src="web/resources/images/spacer.gif" width="8" height="7" alt="" /></td>
 													</tr>
 												</table>
 											</td>
-											<td class="tab">
-												<table cellpadding="0" cellspacing="0">
-													<tr>
-														<td class="tabLeft"><img src="web/resources/images/spacer.gif" width="8" height="7" alt="" /></td>
-														<td class="tabBody"><a href="events.php"><img src="web/resources/images/alarmIcon11.png" width="11" height="11" alt="Events"/> Events</a></td>
-														<td class="tabRight"><img src="web/resources/images/spacer.gif" width="8" height="7" alt="" /></td>
-													</tr>
-												</table>
-											</td>
-											<td class="tab">
-												<table cellpadding="0" cellspacing="0">
-													<tr>
-														<td class="tabLeft"><img src="web/resources/images/spacer.gif" width="8" height="7" alt="" /></td>
-														<td class="tabBody"><img src="web/resources/images/chartIcon11.png" width="11" height="11" alt="Graphs"/> Graphs</td>
-														<td class="tabRight"><img src="web/resources/images/spacer.gif" width="8" height="7" alt="" /></td>
-													</tr>
-												</table>
-											</td>
-											
 											<td class="tab" id="settingsTab">
 												<table cellpadding="0" cellspacing="0">
 													<tr>
