@@ -183,7 +183,1052 @@ include ('tree.php');?>
 </table>
 
 <!-- POPUP CONTAINERS -->
+<form action="#" onsubmit="return false">
+<div id="fullGraphPopup" class="popup">
+	<table cellpadding="0" cellspacing="0" width="100%">
+		<tr>
+			<td>
+				<table cellpadding="0" cellspacing="0" width="100%">
+					<tr>
+						<td>
+							<table cellpadding="0" cellspacing="0">
+								<tr>
+									<td>
+										<table cellpadding="0" cellspacing="0" class="popupTab" id="popupGraphTab">
+											<tr>
+												<td class="tabLeft"><img src="web/resources/images/spacer.gif" width="8" height="7" alt="" /></td>
+												<td class="tabBody">Graph Display</td>
+												<td class="tabRight"><img src="web/resources/images/spacer.gif" width="8" height="7" alt="" /></td>
+											</tr>
+										</table>
+									</td>
+									<td>
+										<table cellpadding="0" cellspacing="0" class="popupTab" id="popupGraphConfigTab">
+											<tr>
+												<td class="tabLeft"><img src="web/resources/images/spacer.gif" width="8" height="7" alt="" /></td>
+												<td class="tabBody">Configure</td>
+												<td class="tabRight"><img src="web/resources/images/spacer.gif" width="8" height="7" alt="" /></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td class="tertiaryTopRight"><img src="web/resources/images/spacer.gif" width="1" height="1" alt="" /></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td class="tertiaryBody">
+				<div id="popupGraphBody" class="popupBody">
+					<div class="itemLabel" align="center">localhost:3306 : <span id="graphTitle"></span></div>
+					<div class="itemContents" align="center"><img src="web/resources/images/spacer.gif" id="fullGraph" alt="" /></div>
+					<div class="itemContents" align="right"><input type="button" name="hide" value="hide" id="graphHide" /></div>
+				</div>
+				
+				<div id="popupGraphConfigBody" class="popupBody">
+					<div class="itemContents">
+						<table cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="right" style="padding-right: 10px;" valign="top" nowrap="nowrap"><input type="radio" name="graphType" value="interval" checked="checked" onclick="setGraphControls()" /> Interval:</td>
+								<td valign="top" id="intervalContainer" nowrap="nowrap">
+									<div class="inputLabelWrap">
+										<span class="inputLabelTitle">Hours</span><br/>
+										<select name="intervalHours">
+											
+												<option value="00">00</option>
+											
+												<option value="01">01</option>
+											
+												<option value="02">02</option>
+											
+												<option value="03">03</option>
+											
+												<option value="04">04</option>
+											
+												<option value="05">05</option>
+											
+												<option value="06">06</option>
+											
+												<option value="07">07</option>
+											
+												<option value="08">08</option>
+											
+												<option value="09">09</option>
+											
+												<option value="10">10</option>
+											
+												<option value="11">11</option>
+											
+												<option value="12">12</option>
+											
+												<option value="13">13</option>
+											
+												<option value="14">14</option>
+											
+												<option value="15">15</option>
+											
+												<option value="16">16</option>
+											
+												<option value="17">17</option>
+											
+												<option value="18">18</option>
+											
+												<option value="19">19</option>
+											
+												<option value="20">20</option>
+											
+												<option value="21">21</option>
+											
+												<option value="22">22</option>
+											
+												<option value="23">23</option>
+											
+										</select>
+									</div>
+									
+									<div class="inputLabelWrap">
+										<span class="inputLabelTitle">Minutes</span><br/>
+										<select name="intervalMinutes">
+											
+												<option value="00">00</option>
+											
+												<option value="01">01</option>
+											
+												<option value="02">02</option>
+											
+												<option value="03">03</option>
+											
+												<option value="04">04</option>
+											
+												<option value="05">05</option>
+											
+												<option value="06">06</option>
+											
+												<option value="07">07</option>
+											
+												<option value="08">08</option>
+											
+												<option value="09">09</option>
+											
+												<option value="10">10</option>
+											
+												<option value="11">11</option>
+											
+												<option value="12">12</option>
+											
+												<option value="13">13</option>
+											
+												<option value="14">14</option>
+											
+												<option value="15">15</option>
+											
+												<option value="16">16</option>
+											
+												<option value="17">17</option>
+											
+												<option value="18">18</option>
+											
+												<option value="19">19</option>
+											
+												<option value="20">20</option>
+											
+												<option value="21">21</option>
+											
+												<option value="22">22</option>
+											
+												<option value="23">23</option>
+											
+												<option value="24">24</option>
+											
+												<option value="25">25</option>
+											
+												<option value="26">26</option>
+											
+												<option value="27">27</option>
+											
+												<option value="28">28</option>
+											
+												<option value="29">29</option>
+											
+												<option value="30">30</option>
+											
+												<option value="31">31</option>
+											
+												<option value="32">32</option>
+											
+												<option value="33">33</option>
+											
+												<option value="34">34</option>
+											
+												<option value="35">35</option>
+											
+												<option value="36">36</option>
+											
+												<option value="37">37</option>
+											
+												<option value="38">38</option>
+											
+												<option value="39">39</option>
+											
+												<option value="40">40</option>
+											
+												<option value="41">41</option>
+											
+												<option value="42">42</option>
+											
+												<option value="43">43</option>
+											
+												<option value="44">44</option>
+											
+												<option value="45">45</option>
+											
+												<option value="46">46</option>
+											
+												<option value="47">47</option>
+											
+												<option value="48">48</option>
+											
+												<option value="49">49</option>
+											
+												<option value="50">50</option>
+											
+												<option value="51">51</option>
+											
+												<option value="52">52</option>
+											
+												<option value="53">53</option>
+											
+												<option value="54">54</option>
+											
+												<option value="55">55</option>
+											
+												<option value="56">56</option>
+											
+												<option value="57">57</option>
+											
+												<option value="58">58</option>
+											
+												<option value="59">59</option>
+											
+										</select>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td align="right" style="padding: 0px 10px 0px 20px;" valign="top" nowrap="nowrap"><input type="radio" name="graphType" value="fromTo" onclick="setGraphControls()" /> From/To:</td>
+								<td valign="top" id="fromToContainer" nowrap="nowrap">
+									<table cellpadding="0" cellspacing="0">
+										<tr>
+											<td valign="top">
+												<div class="inputLabelWrap">
+													<span class="inputLabelTitle">From</span><br/>
+													<table cellpadding="0" cellspacing="0">
+														<tr>
+															<td><input type="text" id="fromCalendar" name="fromDate" size="8" disabled="disabled"/></td>
+															<td><img src="web/resources/images/calendarIcon.jpg" id="fromCalendarButton" width="16" height="16" alt="" /></td>
+														</tr>
+													</table>
+													<script type="text/javascript" language="javascript">
+													/* <![CDATA[ */
+														var fromCalendar = new calendar();
+														fromCalendar.registerInput('fromCalendar');
+														fromCalendar.registerToggle('fromCalendarButton');
+														fromCalendar.setTimeOffset('2007-08-06-11-34');
+														fromCalendar.init();
+													/* ]]> */
+													</script>
+												</div>
+												
+												<div class="inputLabelWrap">
+													<span class="inputLabelTitle">Hours</span><br/>
+													<select name="fromHours" disabled="disabled">
+														
+															<option value="00">00</option>
+														
+															<option value="01">01</option>
+														
+															<option value="02">02</option>
+														
+															<option value="03">03</option>
+														
+															<option value="04">04</option>
+														
+															<option value="05">05</option>
+														
+															<option value="06">06</option>
+														
+															<option value="07">07</option>
+														
+															<option value="08">08</option>
+														
+															<option value="09">09</option>
+														
+															<option value="10">10</option>
+														
+															<option value="11">11</option>
+														
+															<option value="12">12</option>
+														
+															<option value="13">13</option>
+														
+															<option value="14">14</option>
+														
+															<option value="15">15</option>
+														
+															<option value="16">16</option>
+														
+															<option value="17">17</option>
+														
+															<option value="18">18</option>
+														
+															<option value="19">19</option>
+														
+															<option value="20">20</option>
+														
+															<option value="21">21</option>
+														
+															<option value="22">22</option>
+														
+															<option value="23">23</option>
+														
+													</select>
+												</div>
+												
+												<div class="inputLabelWrap">
+													<span class="inputLabelTitle">Minutes</span><br/>
+													<select name="fromMinutes" disabled="disabled">
+														
+															<option value="00">00</option>
+														
+															<option value="01">01</option>
+														
+															<option value="02">02</option>
+														
+															<option value="03">03</option>
+														
+															<option value="04">04</option>
+														
+															<option value="05">05</option>
+														
+															<option value="06">06</option>
+														
+															<option value="07">07</option>
+														
+															<option value="08">08</option>
+														
+															<option value="09">09</option>
+														
+															<option value="10">10</option>
+														
+															<option value="11">11</option>
+														
+															<option value="12">12</option>
+														
+															<option value="13">13</option>
+														
+															<option value="14">14</option>
+														
+															<option value="15">15</option>
+														
+															<option value="16">16</option>
+														
+															<option value="17">17</option>
+														
+															<option value="18">18</option>
+														
+															<option value="19">19</option>
+														
+															<option value="20">20</option>
+														
+															<option value="21">21</option>
+														
+															<option value="22">22</option>
+														
+															<option value="23">23</option>
+														
+															<option value="24">24</option>
+														
+															<option value="25">25</option>
+														
+															<option value="26">26</option>
+														
+															<option value="27">27</option>
+														
+															<option value="28">28</option>
+														
+															<option value="29">29</option>
+														
+															<option value="30">30</option>
+														
+															<option value="31">31</option>
+														
+															<option value="32">32</option>
+														
+															<option value="33">33</option>
+														
+															<option value="34">34</option>
+														
+															<option value="35">35</option>
+														
+															<option value="36">36</option>
+														
+															<option value="37">37</option>
+														
+															<option value="38">38</option>
+														
+															<option value="39">39</option>
+														
+															<option value="40">40</option>
+														
+															<option value="41">41</option>
+														
+															<option value="42">42</option>
+														
+															<option value="43">43</option>
+														
+															<option value="44">44</option>
+														
+															<option value="45">45</option>
+														
+															<option value="46">46</option>
+														
+															<option value="47">47</option>
+														
+															<option value="48">48</option>
+														
+															<option value="49">49</option>
+														
+															<option value="50">50</option>
+														
+															<option value="51">51</option>
+														
+															<option value="52">52</option>
+														
+															<option value="53">53</option>
+														
+															<option value="54">54</option>
+														
+															<option value="55">55</option>
+														
+															<option value="56">56</option>
+														
+															<option value="57">57</option>
+														
+															<option value="58">58</option>
+														
+															<option value="59">59</option>
+														
+													</select>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td valign="top">
+												<div class="inputLabelWrap">
+													<span class="inputLabelTitle">To</span><br/>
+													<table cellpadding="0" cellspacing="0">
+														<tr>
+															<td><input type="text" id="toCalendar" name="toDate" size="8" disabled="disabled" /></td>
+															<td><img src="web/resources/images/calendarIcon.jpg" id="toCalendarButton" width="16" height="16" alt="" /></td>
+														</tr>
+													</table>
+													<script type="text/javascript" language="javascript">
+													/* <![CDATA[ */
+														var toCalendar = new calendar();
+														toCalendar.registerInput('toCalendar');
+														toCalendar.registerToggle('toCalendarButton');
+														toCalendar.setTimeOffset('2007-08-06-11-34');
+														toCalendar.init();
+													/* ]]> */
+													</script>
+												</div>
+												
+												<div class="inputLabelWrap">
+													<span class="inputLabelTitle">Hours</span><br/>
+													<select name="toHours" disabled="disabled">
+														
+															<option value="00">00</option>
+														
+															<option value="01">01</option>
+														
+															<option value="02">02</option>
+														
+															<option value="03">03</option>
+														
+															<option value="04">04</option>
+														
+															<option value="05">05</option>
+														
+															<option value="06">06</option>
+														
+															<option value="07">07</option>
+														
+															<option value="08">08</option>
+														
+															<option value="09">09</option>
+														
+															<option value="10">10</option>
+														
+															<option value="11">11</option>
+														
+															<option value="12">12</option>
+														
+															<option value="13">13</option>
+														
+															<option value="14">14</option>
+														
+															<option value="15">15</option>
+														
+															<option value="16">16</option>
+														
+															<option value="17">17</option>
+														
+															<option value="18">18</option>
+														
+															<option value="19">19</option>
+														
+															<option value="20">20</option>
+														
+															<option value="21">21</option>
+														
+															<option value="22">22</option>
+														
+															<option value="23">23</option>
+														
+													</select>
+												</div>
+												
+												<div class="inputLabelWrap">
+													<span class="inputLabelTitle">Minutes</span><br/>
+													<select name="toMinutes" disabled="disabled">
+														
+															<option value="00">00</option>
+														
+															<option value="01">01</option>
+														
+															<option value="02">02</option>
+														
+															<option value="03">03</option>
+														
+															<option value="04">04</option>
+														
+															<option value="05">05</option>
+														
+															<option value="06">06</option>
+														
+															<option value="07">07</option>
+														
+															<option value="08">08</option>
+														
+															<option value="09">09</option>
+														
+															<option value="10">10</option>
+														
+															<option value="11">11</option>
+														
+															<option value="12">12</option>
+														
+															<option value="13">13</option>
+														
+															<option value="14">14</option>
+														
+															<option value="15">15</option>
+														
+															<option value="16">16</option>
+														
+															<option value="17">17</option>
+														
+															<option value="18">18</option>
+														
+															<option value="19">19</option>
+														
+															<option value="20">20</option>
+														
+															<option value="21">21</option>
+														
+															<option value="22">22</option>
+														
+															<option value="23">23</option>
+														
+															<option value="24">24</option>
+														
+															<option value="25">25</option>
+														
+															<option value="26">26</option>
+														
+															<option value="27">27</option>
+														
+															<option value="28">28</option>
+														
+															<option value="29">29</option>
+														
+															<option value="30">30</option>
+														
+															<option value="31">31</option>
+														
+															<option value="32">32</option>
+														
+															<option value="33">33</option>
+														
+															<option value="34">34</option>
+														
+															<option value="35">35</option>
+														
+															<option value="36">36</option>
+														
+															<option value="37">37</option>
+														
+															<option value="38">38</option>
+														
+															<option value="39">39</option>
+														
+															<option value="40">40</option>
+														
+															<option value="41">41</option>
+														
+															<option value="42">42</option>
+														
+															<option value="43">43</option>
+														
+															<option value="44">44</option>
+														
+															<option value="45">45</option>
+														
+															<option value="46">46</option>
+														
+															<option value="47">47</option>
+														
+															<option value="48">48</option>
+														
+															<option value="49">49</option>
+														
+															<option value="50">50</option>
+														
+															<option value="51">51</option>
+														
+															<option value="52">52</option>
+														
+															<option value="53">53</option>
+														
+															<option value="54">54</option>
+														
+															<option value="55">55</option>
+														
+															<option value="56">56</option>
+														
+															<option value="57">57</option>
+														
+															<option value="58">58</option>
+														
+															<option value="59">59</option>
+														
+													</select>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>						
+						</table>
+					</div>
+					
+					<div class="itemContents">Hide this popup and click on the "configure graphs" to make persistent changes to the default graph size or interval. (Changes made here will only apply to the next graph displayed in this popup.)</div>
+					
+					<div class="itemContents" align="right">
+						<input type="button" name="update" value="update" id="graphUpdate" />
+						<input type="button" name="hide" value="hide" id="graphHide2" />
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table cellpadding="0" cellspacing="0" width="100%">
+					<tr>
+						<td class="tertiaryBL"><img src="web/resources/images/tertiaryOnBL.gif" width="8" height="7" alt="" /></td>
+						<td class="tertiaryBC"><img src="web/resources/images/spacer.gif" width="1" height="1" alt="" /></td>
+						<td class="tertiaryBR"><img src="web/resources/images/tertiaryOnBR.gif" width="8" height="7" alt="" /></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</div>
+</form>
 
+<form action="#" onsubmit="return false">
+<div id="editGraphDefaults" class="popup">
+	<table cellpadding="0" cellspacing="0" width="100%">
+		<tr>
+			<td>
+				<table cellpadding="0" cellspacing="0" width="100%">
+					<tr>
+						<td>
+							<table cellpadding="0" cellspacing="0">
+								<tr>
+									<td>
+										<table cellpadding="0" cellspacing="0" class="popupTab" id="popupEditGraphDefaultsTab">
+											<tr>
+												<td class="tabLeft"><img src="web/resources/images/spacer.gif" width="8" height="7" alt="" /></td>
+												<td class="tabBody">Graph Display</td>
+												<td class="tabRight"><img src="web/resources/images/spacer.gif" width="8" height="7" alt="" /></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td class="tertiaryTopRight"><img src="web/resources/images/spacer.gif" width="1" height="1" alt="" /></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td class="tertiaryBody">	
+				<div id="popupEditGraphDefaultsBody" class="popupBody">
+					<div class="itemContents">
+						<div class="itemContents">
+							Edit the setting below to set the width, height, and interval of the thumbnail graphs and fullsized graphs <strong>on this page only</strong>. Note that these settings are for user <strong>admin</strong>.
+						</div>
+						
+						<div class="itemLabel">Default Interval</div>
+						<div class="itemContents">
+							<table cellpadding="0" cellspacing="0">
+								<tr>
+									<td>
+										<div class="inputLabelWrap">
+											<span class="inputLabelTitle">Hours</span><br/>
+											<select name="hours">
+												
+													<option value="00">00</option>
+												
+													<option value="01">01</option>
+												
+													<option value="02">02</option>
+												
+													<option value="03">03</option>
+												
+													<option value="04">04</option>
+												
+													<option value="05">05</option>
+												
+													<option value="06">06</option>
+												
+													<option value="07">07</option>
+												
+													<option value="08">08</option>
+												
+													<option value="09">09</option>
+												
+													<option value="10">10</option>
+												
+													<option value="11">11</option>
+												
+													<option value="12">12</option>
+												
+													<option value="13">13</option>
+												
+													<option value="14">14</option>
+												
+													<option value="15">15</option>
+												
+													<option value="16">16</option>
+												
+													<option value="17">17</option>
+												
+													<option value="18">18</option>
+												
+													<option value="19">19</option>
+												
+													<option value="20">20</option>
+												
+													<option value="21">21</option>
+												
+													<option value="22">22</option>
+												
+													<option value="23">23</option>
+												
+											</select>
+										</div>
+										
+										<div class="inputLabelWrap">
+											<span class="inputLabelTitle">Minutes</span><br/>
+											<select name="minutes">
+												
+													<option value="00">00</option>
+												
+													<option value="01">01</option>
+												
+													<option value="02">02</option>
+												
+													<option value="03">03</option>
+												
+													<option value="04">04</option>
+												
+													<option value="05">05</option>
+												
+													<option value="06">06</option>
+												
+													<option value="07">07</option>
+												
+													<option value="08">08</option>
+												
+													<option value="09">09</option>
+												
+													<option value="10">10</option>
+												
+													<option value="11">11</option>
+												
+													<option value="12">12</option>
+												
+													<option value="13">13</option>
+												
+													<option value="14">14</option>
+												
+													<option value="15">15</option>
+												
+													<option value="16">16</option>
+												
+													<option value="17">17</option>
+												
+													<option value="18">18</option>
+												
+													<option value="19">19</option>
+												
+													<option value="20">20</option>
+												
+													<option value="21">21</option>
+												
+													<option value="22">22</option>
+												
+													<option value="23">23</option>
+												
+													<option value="24">24</option>
+												
+													<option value="25">25</option>
+												
+													<option value="26">26</option>
+												
+													<option value="27">27</option>
+												
+													<option value="28">28</option>
+												
+													<option value="29">29</option>
+												
+													<option value="30">30</option>
+												
+													<option value="31">31</option>
+												
+													<option value="32">32</option>
+												
+													<option value="33">33</option>
+												
+													<option value="34">34</option>
+												
+													<option value="35">35</option>
+												
+													<option value="36">36</option>
+												
+													<option value="37">37</option>
+												
+													<option value="38">38</option>
+												
+													<option value="39">39</option>
+												
+													<option value="40">40</option>
+												
+													<option value="41">41</option>
+												
+													<option value="42">42</option>
+												
+													<option value="43">43</option>
+												
+													<option value="44">44</option>
+												
+													<option value="45">45</option>
+												
+													<option value="46">46</option>
+												
+													<option value="47">47</option>
+												
+													<option value="48">48</option>
+												
+													<option value="49">49</option>
+												
+													<option value="50">50</option>
+												
+													<option value="51">51</option>
+												
+													<option value="52">52</option>
+												
+													<option value="53">53</option>
+												
+													<option value="54">54</option>
+												
+													<option value="55">55</option>
+												
+													<option value="56">56</option>
+												
+													<option value="57">57</option>
+												
+													<option value="58">58</option>
+												
+													<option value="59">59</option>
+												
+											</select>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</div>
+
+						<div class="itemLabel">Thumbnail Dimensions</div>
+						<div class="itemContents">
+							<table cellpadding="0" cellspacing="0">
+								<tr>
+									<td>
+										<div class="inputLabelWrap">
+											<span class="inputLabelTitle">Width</span><br/>
+											<input type="text" name="thumbWidth" size="5" />
+										</div>
+										
+										<div class="inputLabelWrap">
+											<span class="inputLabelTitle">Height</span><br/>
+											<input type="text" name="thumbHeight" size="5" />
+										</div>
+									</td>
+								</tr>
+							</table>
+						</div>
+						
+						<div class="itemLabel">Full-sized Graph Dimensions</div>
+						<div class="itemContents">
+							<table cellpadding="0" cellspacing="0">
+								<tr>
+									<td>
+										<div class="inputLabelWrap">
+											<span class="inputLabelTitle">Width</span><br/>
+											<input type="text" name="width" size="5" />
+										</div>
+										
+										<div class="inputLabelWrap">
+											<span class="inputLabelTitle">Height</span><br/>
+											<input type="text" name="height" size="5" />
+										</div>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					
+					<div class="itemContents" align="right">
+						<input type="button" name="save" value="save" id="editGraphDefaultsSubmit" />
+						<input type="button" name="cancel" value="cancel" id="editGraphDefaultsHide" />
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table cellpadding="0" cellspacing="0" width="100%">
+					<tr>
+						<td class="tertiaryBL"><img src="web/resources/images/tertiaryOnBL.gif" width="8" height="7" alt="" /></td>
+						<td class="tertiaryBC"><img src="web/resources/images/spacer.gif" width="1" height="1" alt="" /></td>
+						<td class="tertiaryBR"><img src="web/resources/images/tertiaryOnBR.gif" width="8" height="7" alt="" /></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</div>
+</form>
+
+<form action="#" onsubmit="return false">
+<div id="editFavorites" class="popup">
+	<table cellpadding="0" cellspacing="0" width="100%">
+		<tr>
+			<td>
+				<table cellpadding="0" cellspacing="0" width="100%">
+					<tr>
+						<td>
+							<table cellpadding="0" cellspacing="0">
+								<tr>
+									<td>
+										<table cellpadding="0" cellspacing="0" class="popupTab" id="popupEditFavoritesTab">
+											<tr>
+												<td class="tabLeft"><img src="web/resources/images/spacer.gif" width="8" height="7" alt="" /></td>
+												<td class="tabBody">Favorite Graphs</td>
+												<td class="tabRight"><img src="web/resources/images/spacer.gif" width="8" height="7" alt="" /></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td class="tertiaryTopRight"><img src="web/resources/images/spacer.gif" width="1" height="1" alt="" /></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td class="tertiaryBody">	
+				<div id="popupEditFavoritesBody" class="popupBody">
+					<div class="itemContents">
+						<div class="itemContents">
+							Select which graphs will appear on this page. Note that these settings are for user <strong>admin</strong>.
+						</div>
+						
+						<div class="itemLabel">Favorites <span class="itemLabelModifier">(Max of <span id="maxFavorites"></span>)</span></div>
+						<div class="itemContents">
+							<select name="favorites" multiple="multiple" size="6">
+								
+									<option value="-1">[none]</option>
+								
+									<option value="Hit Ratios">Hit Ratios</option>
+								
+									<option value="Database Activity">Database Activity</option>
+								
+									<option value="Connections">Connections</option>
+								
+									<option value="CPU Utilization">CPU Utilization</option>
+								
+									<option value="InnoDB Buffer Pool">InnoDB Buffer Pool</option>
+								
+									<option value="KBytes In/Out">KBytes In/Out</option>
+								
+									<option value="RAM Usage">RAM Usage</option>
+								
+									<option value="Table Locks">Table Locks</option>
+								
+									<option value="Thread Cache">Thread Cache</option>
+								
+							</select>
+						</div>
+					</div>
+					
+					<div class="itemContents" align="right">
+						<input type="button" name="save" value="save" id="editFavoritesSubmit" />
+						<input type="button" name="cancel" value="cancel" id="editFavoritesHide" />
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table cellpadding="0" cellspacing="0" width="100%">
+					<tr>
+						<td class="tertiaryBL"><img src="web/resources/images/tertiaryOnBL.gif" width="8" height="7" alt="" /></td>
+						<td class="tertiaryBC"><img src="web/resources/images/spacer.gif" width="1" height="1" alt="" /></td>
+						<td class="tertiaryBR"><img src="web/resources/images/tertiaryOnBR.gif" width="8" height="7" alt="" /></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</div>
+</form>
 
 
 
