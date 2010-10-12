@@ -104,7 +104,7 @@ include ('tree.php');?>
 														<td></td>
 														<td>$desc[0]</td>
 													</tr>"
-													$desc[0]= "";
+													//$desc[0]= "";
 												
 												}?>
 	
