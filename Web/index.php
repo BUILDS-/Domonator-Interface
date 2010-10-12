@@ -88,6 +88,7 @@ include ('tree.php');?>
 										<tbody>
 											<tr class='titleRow'>
 												<td>Name</td>
+												<td>Subscription Policy</td>
 												<td>Moderated</td>
 												<td>Description</td>
 											</tr>
@@ -98,12 +99,16 @@ include ('tree.php');?>
 													$command2 = "/var/www/major/weblogin/getdescription.pl $value";
 													exec($command2  . " 2>&1", $desc);
 													
-													$command2 = "/var/www/major/weblogin/getmodpolicy.pl $value";
-													exec($command2  . " 2>&1", $mod);
+													$command3 = "/var/www/major/weblogin/getmodpolicy.pl $value";
+													exec($command3  . " 2>&1", $mod);
+													
+													$command3 = "/var/www/major/weblogin/getsubpolicy.pl $value";
+													exec($command3  . " 2>&1", $sp);
 													
 													echo "
 													<tr class='listRowAlt'>
 														<td>$value</td>
+														<td>$sp[0]</td>
 														<td>$mod[0]</td>
 														<td>$desc[0]</td>
 													</tr>";
