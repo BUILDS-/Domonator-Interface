@@ -63,7 +63,7 @@ $username = "$user@bu.edu";
 
 									<table cellpadding="0" cellspacing="0" width="100%" id="tabBar">
 										<tr>
-											<td class="tabOn">
+											<td class="tab">
 												<table cellpadding="0" cellspacing="0">
 													<tr>
 														<td class="tabLeft"><img src="web/resources/images/spacer.gif" width="8" height="7" alt="" /></td>
@@ -72,11 +72,11 @@ $username = "$user@bu.edu";
 													</tr>
 												</table>
 											</td>
-											<td class="tab">
+											<td class="tabOn">
 												<table cellpadding="0" cellspacing="0">
 													<tr>
 														<td class="tabLeft"><img src="web/resources/images/spacer.gif" width="8" height="7" alt="" /></td>
-														<td class="tabBody"><a title="Create List" href="create_list.php"><img src="web/resources/images/securityIcon11.png" width="9" height="11" alt="Create List" /> Create List</td>
+														<td class="tabBody"><a title="Create List" href="#"><img src="web/resources/images/securityIcon11.png" width="9" height="11" alt="Create List" /> Create List</td>
 														<td class="tabRight"><img src="web/resources/images/spacer.gif" width="8" height="7" alt="" /></td>
 													</tr>
 												</table>
@@ -114,7 +114,7 @@ include ('tree.php');?>
 
 					<td>
 
-						<div class="titleBar"><span class="titleModifier">Lists you are subscribed to:</span><div class='paging'>[ <span class='pagingHighlight'>$num of $total ]</div></div>
+						<div class="titleBar"><span class="titleModifier">Create Mailing List:</span></div>
 						
 						<div class="basicBox" style="padding: 5px;" align="center">
 
@@ -132,43 +132,8 @@ include ('tree.php');?>
 						<table cellpadding="0" cellspacing="0" width="100%">
 
 						<?php
-						$command = "/var/www/major/weblogin/getsubs.pl $username";
-							exec($command  . " 2>&1", $subs);
-								echo "
-							<tr>
-								<td class='listBox'>
-									<table cellpadding='0' cellspacing='0' width='100%'>
-										<tbody>
-											<tr class='titleRow'>
-												<td>Name</td>
-												<td>Subscription Policy</td>
-												<td>Moderated</td>
-												<td>Description</td>
-											</tr>
-											
-											";
-												foreach($subs as $key => $value)
-												{
-													$command2 = "/var/www/major/weblogin/getdescription.pl $value";
-													exec($command2  . " 2>&1", $desc);
-													
-													$command3 = "/var/www/major/weblogin/getmodpolicy.pl $value";
-													exec($command3  . " 2>&1", $mod);
-													
-													$command3 = "/var/www/major/weblogin/getsubpolicy.pl $value";
-													exec($command3  . " 2>&1", $sp);
-													
-													echo "
-													<tr class='listRowAlt'>
-														<td>$value</td>
-														<td>$sp[0]</td>
-														<td>$mod[0]</td>
-														<td>$desc[0]</td>
-													</tr>";
-												unset($desc);
-												unset($sp);
-												unset($mod);
-												}?>
+						tbox("Your Name","name",$UserRealName);
+						?>
 	
 												
 											
