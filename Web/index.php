@@ -52,24 +52,6 @@ if ($response->get_Type() == 'ERROR') {
 	$UserRealName	= $response->getName();
 	$UserEmail	= $response->getEmail();
 
-
-	print <<<XXX
-		<html>
-			<head>
-				<title>User Information</title>
-			</head>
-			<body>
-				<h3>USER INFORMATION</h3>
-				<hr>
-				<br>
-				<p>User Alias: <b>$UserAlias</b></p>
-				<p>User Id:&nbsp;&nbsp;&nbsp;&nbsp;<b>$UserId</b></p>
-				<p>User Name:&nbsp;&nbsp;<b>$UserName</b></p>
-				<p>User Email:&nbsp;&nbsp;<b>$UserEmail</b></p>
-			</body>
-		</html>
-XXX;
-
 } else {
 	print "XmlGateway Error: Unsupported data type $response->getType()\n";
 }
