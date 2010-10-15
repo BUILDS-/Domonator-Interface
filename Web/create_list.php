@@ -132,18 +132,74 @@ include ('tree.php');?>
 						<table cellpadding="0" cellspacing="0" width="100%">
 
 						<?php
+						startform("create_list","POST","handle_create_list.php");
 						tbox("Your Name","name","");
 						tbox("Email","email","");
 						tbox("Phone","phone","");
 						tbox("Address","address","");
-						echo"List name <br />";
+						echo"<br />List name <br />";
 						tbox("List Owner","list_owner","");
 						tbox("List Password","list_pass","");
 						tbox("List Description","list_desc","");
 						tbox("List Info","list_info","");
 						tbox("Estimited Subscribers","est_subs","");
 						tbox("Frequency of Mailings","est_freq","");
+						echo"<br /><b>List membership<b/> <br />";
 						?>
+						<table cellpadding=0 cellspacing=0 width=100% bgcolor="#ffffff"> 
+        <tr> 
+          <TD ALIGN="LEFT" VALIGN="TOP">&nbsp;<BR> 
+            <Font size=3><b>List membership:</b></font></td><TD ALIGN="RIGHT" VALIGN="TOP">&nbsp;<BR> 
+          <a target=help href="/computing/mailinglists/maj-help.html#option-list"><img alt="HELP" src="/graphics/mailinglists/help_icon.gif" width="28" height="26" align=right border=0></a></td> 
+        </tr> 
+      
+</table> 
+ 
+             <INPUT TYPE="radio" NAME="Closed" VALUE="YES" CHECKED> 
+        <font size="2">All membership requests are forwarded 
+        to list owner for consideration (the list owner <b>must</b> add/approve 
+        <B>all</B> subscribers).<BR> 
+          <INPUT TYPE="radio" NAME="Closed" VALUE="NO"> 
+        Anyone is allowed to subscribe. Subscriptions are automatically approved.</font><BR> 
+        <BR> 
+      <p></p> 
+      
+<table cellpadding=0 cellspacing=0 width=100% bgcolor="#ffffff"> 
+        <tr> 
+          <TD ALIGN="LEFT" VALIGN="TOP"><Font size=3><b>Moderated/Unmoderated:</b></font></td><TD ALIGN="RIGHT" VALIGN="TOP"><a target=help href="/tech/comm/email/majordomo-mailing-lists/help/"><img alt="HELP" src="/graphics/mailinglists/help_icon.gif" width="28" height="26" align=right border=0></a></td> 
+        </tr> 
+      
+</table> 
+           <INPUT TYPE="radio" NAME="Moderated" VALUE="NO" CHECKED> 
+      <font size="2">Unmoderated- others can post to the list.<BR> 
+	<blockquote> 
+           <INPUT TYPE="radio" NAME="RestrictionType" VALUE="Restricted" CHECKED>Restricted - Only list members can send mail to the list.<br> 
+      
+          <INPUT TYPE="radio" NAME="RestrictionType" VALUE="Unrestricted">Unrestricted - Anyone can send mail to the list.<BR> 
+      </blockquote> 
+ 
+           <input type="radio" name="Moderated" value="YES"> 
+      Moderated list -- anyone can mail to list -- List Owner approval required for all postings. </font><BR> 
+      <BR>  
+      <table width=100% cellpadding=0 cellspacing=0 bgcolor="#ffffff"> 
+        <tr> 
+          <TD ALIGN="LEFT" VALIGN="TOP"><Font size=3><b>List 
+            Confidentiality:</b></font></td><TD ALIGN="RIGHT" VALIGN="TOP"><a target=help href="/tech/comm/email/majordomo-mailing-lists/help/"><img alt="HELP" src="/graphics/mailinglists/help_icon.gif" width="28" height="26" align=right border=0></a></td> 
+        </tr> 
+      </table> 
+            <INPUT TYPE="radio" NAME="Hidden" VALUE="YES" CHECKED> 
+      <font size="2">This list name will not 
+      be included in a display of all lists at BU. </font><br> 
+      <INPUT TYPE="radio" NAME="Hidden" VALUE="NO"> 
+      <font size="2">This list name will be 
+      included in a display of all lists at BU. </font><br> 
+      <br> 
+<table width=100% cellpadding=0 cellspacing=0 bgcolor="#ffffff"> 
+        <tr> 
+          <TD ALIGN="LEFT" VALIGN="TOP"><Font size=3><b>Comments:</b></font></td><TD ALIGN="RIGHT" VALIGN="TOP"></td> 
+        </tr> 
+      </table> 
+            <textarea NAME="Comments" rows=4 cols=40></textarea> 
 	
 												
 											
