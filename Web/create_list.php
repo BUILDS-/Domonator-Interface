@@ -132,7 +132,17 @@ include ('tree.php');?>
 						<table cellpadding="0" cellspacing="0" width="100%">
 
 						<?php
-						tbox("Your Name","name",$UserRealName);
+						tbox("Your Name","name","");
+						tbox("Email","email","");
+						tbox("Phone","phone","");
+						tbox("Address","address","");
+						echo"List name <br />";
+						tbox("List Owner","list_owner","");
+						tbox("List Password","list_pass","");
+						tbox("List Description","list_desc","");
+						tbox("List Info","list_info","");
+						tbox("Estimited Subscribers","est_subs","");
+						tbox("Frequency of Mailings","est_freq","");
 						?>
 	
 												
