@@ -201,7 +201,7 @@ include ('tree.php');?>
       </table> 
             <textarea NAME="Comments" rows=4 cols=40></textarea> 
 	
-												
+												<?php stopform("Create List");?>
 											
 										</tbody>
 									</table>
